@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Draw a rectangular shape</title>
+
+<script type="text/javascript">
+	function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var context = canvas.getContext('2d');
+
+    context.fillRect(10,10,150,150);
+    // context.clearRect(40,40,60,60);
+    // context.strokeRect(45,45,50,50);
+  }
+}
+
+	function draw2() {
+  var canvas = document.getElementById('ract');
+  if (canvas.getContext) {
+    var context = canvas.getContext('2d');
+
+    context.fillRect(10,10,300,150);
+    // context.clearRect(40,40,60,60);
+    // context.strokeRect(45,45,50,50);
+  }
+}
+
+
+function draw3()
+  {
+var canvas = document.getElementById('circle');
+	canvas.style.background = "black";
+	canvas.style.borderRadius = "50%";
+// if (canvas.getContext)
+// {
+// var ctx = canvas.getContext('2d'); 
+// var X = canvas.width / 2;
+// var Y = canvas.height / 2;
+// var R = 60;
+// ctx.beginPath();
+// ctx.arc(X, Y, R, 0, 2 * Math.PI, false);
+// ctx.lineWidth = 7;
+// ctx.strokeStyle = '#000';
+// ctx.stroke();
+// }
+}
+
+</script>
+
+</head>
+<body>
+
+<button onclick="draw();"> Square </button>
+
+<canvas id="canvas" width="200" height="200"></canvas>
+
+<button onclick="draw2();"> Ractangle </button>
+
+<canvas id="ract" width="200" height="200"></canvas>
+
+<button onclick="draw3();"> Circle </button>
+
+<canvas id="circle" width="200" height="200"></canvas>
+
+<button onclick="draw4();"> Tringle </button>
+
+<canvas id="circle" width="200" height="200"></canvas>
+
+</body>
+</html>

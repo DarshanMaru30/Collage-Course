@@ -1,0 +1,13 @@
+.color{
+    background-color: aqua;
+    height: 200px;
+    width: 600px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.another{
+    background-color: beige;
+    height: 100px;
+    width: 150px;
+    margin-bottom: 5px;
+}

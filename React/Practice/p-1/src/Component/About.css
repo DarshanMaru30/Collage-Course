@@ -1,0 +1,15 @@
+h4{
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    margin-right: 40px;
+}
+.box{
+    width: 80%;
+    border-top: 1px solid #ddd;
+}
+.b1{
+    padding: 10px;
+}
+.card{
+    /* width: 20rem; */
+}

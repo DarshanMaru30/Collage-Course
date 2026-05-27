@@ -1,0 +1,560 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  font-family: 'Roboto';
+}
+.container
+{
+  width: 1200px;
+  margin: auto;
+}
+.padding{
+  margin-top: 80px;
+}
+.padd{
+  margin-bottom: 40px !important;
+}
+.space
+{
+  margin: 50px 0 20px 0;
+}
+
+.d-flex
+{
+  display: flex;
+  justify-content: space-between;
+}
+.top-nav
+{
+  background-color: #003366 ;
+  padding: 10px 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 400 !important;
+}
+.top-nav .left i
+{
+  padding:0 8px 0 20px;
+}
+.top-nav .right i
+{
+  padding:0 8px 0 5px;
+}
+
+/* menu bar */
+
+.logo
+{
+  width: 220px;
+  margin:10px 0 10px 0;
+}
+
+.menu
+{
+  align-items: center;
+  /* font-size: 16px; */
+}
+.menu h6{
+  margin-right: 20px;
+}
+.menu h4
+{
+  padding: 30px 10px;
+}
+.hi img
+{
+  width: 100%;
+}
+
+
+  /* offered courses */
+.course h3
+{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+.course h1
+{
+  text-align: center;
+  margin: 0 0 16px;
+  font-size: 32px;
+}
+.row1
+{
+  /* padding:  0 40px 0 40px; */
+  word-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box
+{
+  margin-bottom: 20px;
+}
+.row1 img
+{
+  width: 350px;
+  height: 233px;
+  border-radius: 12px 12px 0 0;
+}
+.row1 .img h2
+{
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.box .list
+{
+  border: 1px solid #8888;
+  border-radius: 0 0 10px 10px;
+  margin-top: -5px;
+
+}
+.box h2
+{
+  /* border: 1px solid #888888; */
+  margin-top: -10px;
+}
+.box p
+{
+  /* border: 1px solid #888888; */
+  padding: 15px;
+  font-size: 14px;
+  color: #ffc600;
+  
+}
+.box .list p button
+{
+  margin-left: 130px;
+  padding: 7px 15px;
+  background-color: #003366 ;
+  color: white;
+  border: 0;
+}
+.view
+{
+  text-align: center;
+}
+.view button
+{
+  border: 2px solid #FFBC06 ;
+  background-color: #FFBC06;
+  padding: 12px 30px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+}
+
+/* About US */
+.space
+{
+  padding: 50px 0 50px 0;
+}
+.about
+{
+  padding-bottom: 50px;
+}
+.a-two img
+{
+  width: 526px;
+  height: 351px;
+  margin-top: 70px;
+}
+.a-one
+{
+  padding: 58.938px;
+  border-radius: 0 300px 300px 0;
+  box-shadow: 1px 1px 10px #888888;
+  margin-right: -50px;
+  z-index: 1;
+  background-color: white;
+}
+.a-one h1
+{
+  font-size: 14px;
+  margin: 0 0 10px;
+  padding: 0 0 0 30px;
+  font-weight: 400;
+}
+.a-one h2
+{
+  font-size: 16px;
+  margin: 0 0 16px;
+  font-weight: 600;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+.a-one h3
+{
+  font-size: 18px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 0 24px 0 0;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+  text-align: justify;
+  color: #888888;
+}
+.a-one h4 button
+{
+  padding: 12px 30px;
+  background-color: #FFBC06;
+  color: white;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+
+/* happy student */
+
+.happy-s
+{
+  margin: 50px 0 50px 0;
+}
+.happy-s img
+{
+  width: 100%;
+  height: 252px;
+}
+
+/*  Alumni speak */
+
+.speak 
+{
+  padding: 50px 0 50px 0;
+  justify-content:space-between ;
+}
+.speak .s-one
+{
+  width: 50%;
+}
+.s-one h1
+{
+  font-size: 16px;
+  margin: 0 0 10px;
+  padding: 0 0 0 30px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.s-one p
+{
+  font-size: 18px;
+  color: #888888;
+  line-height: 1.5;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.s-one h2
+{
+  font-size: 32px;
+  margin: 0 0 16px;
+}
+.s-one .ee
+{
+  padding-top: 30px;
+  display: flex;
+}
+.s-one .ee h2
+{
+  color: #FFBC06;
+  font-size: 18px;
+  margin-left: 25px;
+}
+.s-one .ee h3
+{
+  color: #888888;
+  font-size: 18px;
+  padding-left: 8px;
+}
+.s-one .ee img
+{
+  border-radius: 50%;
+  width: 70px;
+  /* padding-top: 20px; */
+}
+.speak .s-two img
+{
+  width: 540px;
+  height: 488px;
+  border-radius: 300px;
+}
+
+/* choice .... */
+.hello
+{
+  background-color: #F7F7F7;
+}
+.choice h1
+{
+  text-align: center;
+  font-size: 14px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.choice h2
+{
+  text-align: center;
+  font-size: 32px;
+  margin: 0 0 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.crow-1
+{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.hello .bo1
+{
+  width: 30%;
+  padding: 30px;
+  margin: 15px;
+  /* width: 33%; */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 4px 10px gray;
+  align-items: center;
+  text-align: center  ;
+}
+.hello .bo1 img
+{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.hello .bo1 h1
+{
+  font-size: 20px;
+  /* margin: 0 0 8px; */
+  font-weight: 600;
+  line-height: 1.5;
+}
+.hello .bo1 h2
+{
+  font-size: 18px;
+  font-weight: 500;
+  color: #888888;
+}
+
+/* student palcement */
+.place
+{
+  padding: 0 0 50px 0;
+}
+.place h1
+{
+  font-size: 14px;
+  margin: 0 0 10px;
+  padding: 0 0 0 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  white-space: 1px;
+  font-weight: 400;
+}
+.place h2
+{
+  font-size: 32px;
+  margin: 0 0 16px;
+  padding: 0 0 0 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  white-space: 1px
+}
+.job img
+{
+  border: 1px solid #ddd;
+}
+
+/* OUR DEMAND */
+.demand
+{
+  padding-bottom: 50px;
+}
+.demand button
+{
+  padding: 2px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 2px solid #ddd;
+  color: #777;
+}
+.demand h1
+{
+  font-size: 20px;
+}
+.demand h2
+{
+  margin-bottom: 20px;
+}
+
+
+/* Futter */
+
+.futter
+{
+  background-color: #042b52;
+}
+.foo
+{
+  padding: 100px 0;
+}
+.foo .f1
+{
+  width: 33.33%;
+}
+.f1 img
+{
+  z-index: -2;
+  width: 262px;
+  margin-bottom: 15px;
+}
+.f1 h1
+{
+  color: white;
+  font-size: 16px;
+  margin: 0 0 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-weight: 400  ;
+}
+.f1 h2
+{
+  color: #FFBC06;
+  font-size: 18px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  margin: 10px 0 20px;
+  padding: 16px 0 0;
+}
+.f1 .icon i
+{
+  padding-right: 15px;
+  padding: 4px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background-color: #003366;
+  color: white;
+}
+.f2 h1
+{
+  color: white;
+  font-size: 16px;
+  margin: 10px 0 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+}
+.f2 h2
+{
+  color: white;
+  font-size: 14px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  padding: 0 0 10px;
+}
+.f3 h1
+{
+  color: white;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 16px;
+  margin: 10px 0 20px;
+}
+.f3 h2
+{
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.f3 p
+{
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 1.5;
+}
+.f3 .mo
+{
+  display: flex;
+  color: white;
+}
+.f3 .mo h3
+{
+  color: #FFBC06;
+  line-height: -4.5;
+}
+.f3 h4
+{
+  color: #FFBC06;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.f3 h5
+{
+  color: white;
+  padding: 0 0 10px;
+  font-size: 16px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+.last 
+{
+  background-color: #072044;
+  padding: 30px 0;
+  padding-left: 60px;
+}
+.last h1
+{
+  font-size: 18px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  color: white;
+}
+.happy-s
+{
+  position: relative;
+}
+.happy-s .data
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.happy-s .data .container
+{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+}
+.happy-s::before
+{
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(7, 41, 77, 0.70);
+  position: absolute;
+}

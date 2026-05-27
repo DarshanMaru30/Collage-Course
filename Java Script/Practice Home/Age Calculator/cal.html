@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age-Calculator</title>
+    <style>
+        div
+        {
+            margin-top: 5px;
+        }
+        button
+        {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .box
+        {
+            display: flex;
+        }
+        #table
+        {
+            /* display: none; */
+        }
+    </style>
+
+    <script>
+
+        function get() 
+        {
+            
+            var d1 = document.getElementById('date1');
+            var d2 = document.getElementById('date2');
+
+            if(!d1.value || !d2.value)
+            {
+                alert("Plz Select Valid Date...!");
+            }
+            else{
+                const dob = new Date(d1.value);
+                const today = new Date(d2.value);
+                const milisecond = today - dob;
+                const second = milisecond / 1000;
+                const minute = second / 60;
+                const hour = minute / 60;
+                const day = hour / 24;
+                const week = Math.floor(day / 7);
+                const month = (today.getMonth() - dob.getMonth() + (12 * (today.getFullYear() - dob.getFullYear())));
+                const year = Math.floor(month / 12);
+
+                document.getElementById('Iyear').innerHTML = year;
+                document.getElementById('Imonths').innerHTML = month;
+                document.getElementById('Iweek').innerHTML = week;
+                document.getElementById('Iday').innerHTML = day;
+                document.getElementById('Ihours').innerHTML = hour;
+                document.getElementById('Iminit').innerHTML = minute;
+                document.getElementById('Isecond').innerHTML = second;  
+            }    
+        }
+
+    </script> 
+
+</head>
+<body>
+
+    <h1>Age Calculator</h1>
+    <div>Date Of Birth = <input type="date" id="date1"></div>
+    <div>Today Date = <input type="date" id="date2"></div>
+    <button onclick="get()">Click To Find Age</button>
+    
+    <div id="table">
+        <div class="box">
+            <h2>You Already Lived....!</h2>
+        </div>
+        <div class="box">
+            <p>Year</p>
+            <p id="Iyear"></p>
+        </div>
+        <div class="box">
+            <p>Months</p>
+            <p id="Imonths"></p>
+        </div>
+        <div class="box">
+            <p>week</p>
+            <p id="Iweek"></p>
+        </div>
+        <div class="box">
+            <p>Day</p>
+            <p id="Iday"></p>
+        </div>
+        <div class="box">
+            <p>Hours</p>
+            <p id="Ihours"></p>
+        </div>
+        <div class="box">
+            <p>Minutes</p>
+            <p id="Iminit"></p>
+        </div>
+        <div class="box">
+            <p>Seconds</p>
+            <p id="Isecond"></p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.paddi{
+    background-color: aqua;
+    height: 300px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.inner{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 10px;
+    background-color: lightcyan;
+    display: flex !important;
+    justify-content: space-around !important;
+}

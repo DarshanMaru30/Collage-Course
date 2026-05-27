@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Practice</title>
+
+    <style>
+
+        .box
+        {
+            width: 270px;
+            margin: 30px auto;
+        }
+        .key
+        {
+            font-size: 20px;
+            height: 50px;
+            width: 50px;
+            margin: 2px;
+        }
+        #d1
+        {
+            font-size: 30px;
+            height: 50px;
+            width: 219px;
+        }
+
+    </style>
+
+    <script>
+
+        var favl , lval , cal ;
+        function getdata(x)
+        {
+            document.getElementById('d1').value += x;
+        }
+        function sum(a)
+        {
+            fval = document.getElementById('d1').value;
+            cal = a;
+            document.getElementById('d1').value = "";
+        }
+        function sub(b)
+        {
+            fval = document.getElementById('d1').value;
+            cal = b;
+            document.getElementById('d1').value = "";
+        }
+        function mul(c)
+        {
+            fval = document.getElementById('d1').value;
+            cal = c;
+            document.getElementById('d1').value = "";
+        }
+        function div(d)
+        {
+            fval = document.getElementById('d1').value;
+            cal = d;
+            document.getElementById('d1').value = "";
+        }
+        function ans()
+        {
+            lval = document.getElementById('d1').value;
+            document.getElementById('d1').value = "";
+
+            if(cal==10)
+            {
+                var data = parseFloat(fval) / parseFloat(lval);
+            }
+            else if(cal==11)
+            {
+                var data = parseFloat(fval) * parseFloat(lval);
+            }
+            else if(cal==12)
+            {
+                var data = parseFloat(fval) - parseFloat(lval);
+            }
+            else if(cal==13)
+            {
+                var data = parseFloat(fval) + parseFloat(lval); 
+            }
+            document.getElementById('d1').value = data;
+        }
+        function remove()
+        {
+            document.getElementById('d1').value = "";
+        }
+        function rewoke()
+        {
+            var s = document.getElementById('d1').value;
+            var t = s.substring(0,s.length-1);
+            document.getElementById('d1').value = t;
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="disp">
+            <input type="text" id="d1">
+        </div>
+        <div class="keyboard">
+            <div class="keybox">
+                <button class="key" onclick="getdata('7')">7</button>
+                <button class="key" onclick="getdata('8')">8</button>
+                <button class="key" onclick="getdata('9')">9</button>
+                <button class="key" onclick="div(10)">/</button>
+            </div>
+            <div class="keybox">
+                <button class="key" onclick="getdata('4')">4</button>
+                <button class="key" onclick="getdata('5')">5</button>
+                <button class="key" onclick="getdata('6')">6</button>
+                <button class="key" onclick="mul(11)">*</button>
+            </div>
+            <div class="keybox">
+                <button class="key" onclick="getdata('1')">1</button>
+                <button class="key" onclick="getdata('2')">2</button>
+                <button class="key" onclick="getdata('3')">3</button>
+                <button class="key" onclick="sub(12)">-</button>
+            </div>
+            <div class="keybox">
+                <button class="key" onclick="getdata('.')">.</button>
+                <button class="key" onclick="getdata('0')">0</button>
+                <button class="key" onclick="sum(13)">+</button>
+                <button class="key" onclick="rewoke()">C</button>
+            </div>
+            <div class="keybox">
+                <button class="key" onclick="getdata()">+/-</button>
+                <button class="key" onclick="getdata()">%</button>
+                <button class="key" onclick="ans()">=</button>
+                <button class="key" onclick="remove()">AC</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

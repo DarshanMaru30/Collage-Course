@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form With Table</title>
+
+    <script>
+
+        function getdata()
+        {
+            var nm,em,ps,cnt=0,tbl;
+            function getdata()
+            {
+                var nm = document.getElementById('name').value;
+                var em = document.getElementById('email').value;
+                var ps = document.getElementById('password').value;
+
+                if(cnt==0)
+                {
+                    tbl = `<tr>
+                        <th>Name</th>
+                        <th>Email<th>
+                        <th>Password<th>
+                        <th>`
+                            
+                }
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form action="">
+        <table border="5" align="center">
+            <tr>
+                <td>Name : </td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email : </td>
+                <td><input type="email" name="email" ></td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input type="text" name="password" ></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" onclick="getdata()"><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <table id="tbl" class="table" align="center" border="3">
+
+    </table>
+    
+</body>
+</html>

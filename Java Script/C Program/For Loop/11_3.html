@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script type="text/javascript">
+		
+		var a = 121,b = a,t,rev=0;
+
+		document.write("A = "+a);
+
+		for(;a>0;)
+		{
+			t = a%10;
+			rev = rev*10+t;
+			a = a/10;
+		}
+
+		if(rev==b)
+		{
+			document.write("<br>Pelindron")
+		}
+		else
+		{
+			document.write("<br>Not")
+		}
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

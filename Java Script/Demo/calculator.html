@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+
+	<style type="text/css">
+		
+		body
+		{
+			background-color: lightcyan; 
+		}
+		.flex
+		{
+			display: flex;
+		}
+		.box
+		{
+			margin: 100px auto;
+			height: 500px;
+			width: 400px;
+			border-radius: 20px;
+		}
+		input
+		{
+			width: 396px;
+			height: 150px;
+			font-size: 70px;
+			border: none;
+			background-color: red;
+			color: white;
+			font-weight: bolder;
+			border-radius: 20px 20px 0px 0px;
+			text-align: right;
+		}
+		.keybord
+		{
+			padding: 30px;
+			background-color: white;
+			border-radius: 0px 0px 10px 10px;
+		}
+		.key
+		{
+			font-size: 35px;
+			margin: 3px;
+			height: 75px;
+			width: 75px;
+			border-radius: 500px;
+			border: none;
+			color: #5F5959;
+			font-weight: bolder;
+			background-color: #ECEDEF;
+		}
+		.red
+		{
+			background-color: red;
+			color: white;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		
+		var fval , lval , cal;
+		function getdata(x)
+		{
+			document.getElementById('disp').value += x;
+		}
+		function sum(a)
+		{
+			fval = document.getElementById('disp').value;
+			cal = a;
+			document.getElementById('disp').value = '';
+		}
+		function sub(b)
+		{
+			fval = document.getElementById('disp').value;
+			cal = b;
+			document.getElementById('disp').value = '';
+		}
+		function mul(c) 
+		{
+			fval = document.getElementById('disp').value
+			cal = c;
+			document.getElementById('disp').value = '';
+		};
+		function div(d) 
+		{
+			fval = document.getElementById('disp').value;
+			cal = d;
+			document.getElementById('disp').value = '';
+		}
+		function sign() 
+		{
+			lval = document.getElementById('disp').value;
+			document.getElementById('disp').value = '';
+
+			if(cal==10)
+			{
+				var data = parseFloat(fval) + parseFloat(lval);
+			}
+			else if(cal==11)
+			{
+				var data = parseFloat(fval) - parseFloat(lval);
+			}
+			else if(cal==12)
+			{
+				var data = parseFloat(fval) * parseFloat(lval);
+			}
+			else if(cal==13)
+			{
+				var data = parseFloat(fval) / parseFloat(lval);
+			}
+			document.getElementById('disp').value = data;
+		}
+		function nul()
+		{
+			document.getElementById('disp').value = '';
+		}
+		function dele()
+		{
+			var s = document.getElementById('disp').value;
+			var n = s.substring(0,s.length-1); 
+			document.getElementById('disp').value = n;
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="disp flex">
+				<input type="text" readonly name="" id="disp">
+			</div>
+			<div class="keybord">
+				<div class="keybox">
+					<button class="key" id="btn9" onclick="dele()">C</button>
+					<button class="key" id="btne" onclick="nul()">CE</button>
+					<button class="key" id="btn8" onclick="getdata()">%</button>
+					<button class="key" id="btne" onclick="sum(10)">+</button>
+				</div>
+				<div class="keybox">
+					<button class="key" id="btn7" onclick="getdata('7')">7</button>
+					<button class="key" id="btn8" onclick="getdata('8')">8</button>
+					<button class="key" id="btn9" onclick="getdata('9')">9</button>
+					<button class="key" id="btn+" onclick="sub(11)">-</button>
+				</div>
+				<div class="keybox">
+					<button class="key" id="btn4" onclick="getdata('4')">4</button>
+					<button class="key" id="btn5" onclick="getdata('5')">5</button>
+					<button class="key" id="btn6" onclick="getdata('6')">6</button>
+					<button class="key" id="btn-" onclick="mul(12)">*</button>
+				</div>
+				<div class="keybox">
+					<button class="key" id="btn1" onclick="getdata('1')">1</button>
+					<button class="key" id="btn2" onclick="getdata('2')">2</button>
+					<button class="key" id="btn3" onclick="getdata('3')">3</button>
+					<button class="key" id="btn/" onclick="div(13)">/</button>
+				</div>
+				<div class="keybox">
+					<button class="key" id="btn0" onclick="getdata('0')" style="width: 159px;">0</button>
+					<button class="key" id="btn*" onclick="getdata('.')">.</button>
+					<button class="key red" id="btn=" onclick="sign()">=</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

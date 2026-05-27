@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script type="text/javascript">
+		
+		var s1 = 40,s2 = 67,s3 = 89,s4 = 56,s5 = 56;
+
+		document.write("Subject 1 = "+s1);
+		document.write("<br>Subject 2 = "+s2);
+		document.write("<br>Subject 3 = "+s3);
+		document.write("<br>Subject 4 = "+s4);
+		document.write("<br>Subject 5 = "+s5);
+
+		var total = s1+s2+s3+s4+s5;
+		document.write("<br><br>Total = "+total);
+
+		var per = total/5;
+		document.write("<br>Per = "+per);
+
+		if(s1<s2 && s1<s3 && s1<s4 && s1<s5)
+		{
+			document.write("<br>Min = "+s1);
+		}
+		else if(s2<s3 && s2<s4 && s2<s5)
+		{
+			document.write("<br>Min = "+s2);
+		}
+		else if(s3<s4 && s3<s5)
+		{
+			document.write("<br>Min = "+s3);
+		}
+		else if(s4<s5)
+		{
+			document.write("<br>Min = "+s4);
+		}
+		else
+		{
+			document.write("<br>Min = "+s5);
+		}
+
+		if(s1>s2 && s1>s3 && s1>s4 && s1>s5)
+		{
+			document.write("<br>Max = "+s1);
+		}
+		else if(s2>s3 && s2>s4 && s2>s5)
+		{
+			document.write("<br>Max = "+s2);
+		}
+		else if(s3>s4 && s3>s5)
+		{
+			document.write("<br>Max = "+s3);
+		}
+		else if(s4>s5)
+		{
+			document.write("<br>Max = "+s4);
+		}
+		else
+		{
+			document.write("<br>Max = "+s5);
+		}
+
+		var temp = 0;
+
+		if(s1>35)
+		{
+			temp = temp+1;
+		}
+		if(s2>35)
+		{
+			temp = temp+1;
+		}
+		if(s3>35)
+		{
+			temp = temp+1;
+		}
+		if(s4>35)
+		{
+			temp = temp+1;
+		}
+		if(s5>35)
+		{
+			temp = temp+1;
+		}
+
+		if(temp==5)
+		{
+			document.write("<br>Result = PASS");
+		}
+		else if(temp==3 || temp==4)
+		{
+			document.write("<br>Result = ATKT");
+		}
+		else
+		{
+			document.write("<br>Result = FAIL");
+		}
+
+		if(s1>35 && s2>35 && s3>35 && s4>35 && s5>35)
+		{
+			if(per>90)
+			{
+				document.write("<br>Grade = A+");
+			}
+			else if(per>80)
+			{
+				document.write("<br>Grade = A");
+			}
+			else if(per>70)
+			{
+				document.write("<br>Grade = B+");
+			}
+			else if(per>60)
+			{
+				document.write("<br>Grade = C+");
+			}
+			else if(per>50)
+			{
+				document.write("<br>Grade = C");
+			}
+			else
+			{
+				document.write("<br>Grade = D");
+			}
+		}
+		else
+		{
+				document.write("<br>Grade = E");
+		}
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

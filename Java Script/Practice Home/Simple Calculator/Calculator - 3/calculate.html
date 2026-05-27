@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Calculator</title>
+
+	<style type="text/css">
+		
+		body
+		{
+			background: #91E9FC;
+		}
+		.box
+		{
+			background: black;
+			width: 400px;
+			margin: 100px auto;
+			border-radius: 30px;
+		}
+		input
+		{
+			background: #D7E0E3;
+			margin: 30px;
+			margin-top: 45px;
+			margin-bottom: 0px;
+			padding: 10px;
+			padding-bottom: 15px;
+			padding-top: 15px;
+			width: 320px;
+			font-size: 35px;
+			border-radius: 5px;
+			text-align: right;
+		}
+		.keybord
+		{
+			text-align: center;
+			padding: 30px;
+		}
+		.key
+		{
+			background: #D7E0E3;
+			border-radius: 5px;
+			margin: 7px;
+			width: 65px;
+			height: 65px;
+			font-size: 25px;
+		}
+		.orange
+		{
+			width: 150px;
+			background: #FF3D00;
+			color: white;
+		}
+		.red
+		{
+			background: #FF1A1A;
+			color: white;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		
+		var fval , lval , cal;
+		function getdata(n) 
+		{
+			var x = document.getElementById('disp').value += n;
+		}
+		function remove()
+		{
+			document.getElementById('disp').value = "";
+		}
+		function nul() 
+		{
+			var s = document.getElementById('disp').value;
+			var x = s.substring(0,s.length-1);
+			document.getElementById('disp').value = x;
+		}
+		function sum(a)
+		{
+			fval = document.getElementById('disp').value;
+			cal = a;
+			document.getElementById('disp').value = "";
+		}
+		function sub(b)
+		{
+			fval = document.getElementById('disp').value;
+			cal = b;
+			document.getElementById('disp').value = "";
+		}
+		function mul(c)
+		{
+			fval = document.getElementById('disp').value;
+			cal = c;
+			document.getElementById('disp').value = "";
+		}
+		function div(d)
+		{
+			fval = document.getElementById('disp').value;
+			cal = d;
+			document.getElementById('disp').value = "";
+		}
+		function sign()
+		{
+			lval = document.getElementById('disp').value;
+			document.getElementById('disp').value = "";
+
+			if(cal==10)
+			{
+				var data = parseFloat(fval) + parseFloat(lval);
+			}
+			else if(cal==11)
+			{
+				var data = parseFloat(fval) - parseFloat(lval);
+			}
+			else if(cal==12)
+			{
+				var data = parseFloat(fval) * parseFloat(lval);
+			}
+			else if(cal==13)
+			{
+				var data = parseFloat(fval) / parseFloat(lval);
+			}
+			document.getElementById('disp').value = data;
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<div class="box">
+		<div class="container">
+			<div class="screen">
+				<input type="text" name="" readonly id="disp">
+			</div>
+			<div class="keybord">
+				<div class="keypad">
+					<button class="key orange" onclick="nul()">C</button>
+					<button class="key orange" onclick="remove()">AC</button>
+				</div>
+				<div class="keypad">
+					<button class="key" onclick="getdata('7')">7</button>
+					<button class="key" onclick="getdata('8')">8</button>
+					<button class="key" onclick="getdata('9')">9</button>
+					<button class="key" onclick="div(13)">/</button>
+				</div>
+				<div class="keypad">
+					<button class="key" onclick="getdata('4')">4</button>
+					<button class="key" onclick="getdata('5')">5</button>
+					<button class="key" onclick="getdata('6')">6</button>
+					<button class="key" onclick="mul(12)">*</button>
+				</div>
+				<div class="keypad">
+					<button class="key" onclick="getdata('1')">1</button>
+					<button class="key" onclick="getdata('2')">2</button>
+					<button class="key" onclick="getdata('3')">3</button>
+					<button class="key" onclick="sub(11)">-</button>
+				</div>
+				<div class="keypad">
+					<button class="key" onclick="getdata('.')">.</button>
+					<button class="key" onclick="getdata('0')">0</button>
+					<button class="key" onclick="sum(10)">+</button>
+					<button class="key red" onclick="sign()">=</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

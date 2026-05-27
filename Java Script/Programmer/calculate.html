@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Programmer Calculator</title>
+
+	<style>
+		
+		*
+		{
+			margin: 0;
+		}
+		body
+		{
+			background-color: lightgray;
+		}
+		.box
+		{
+			border: none !important;
+			margin: 10px auto;
+			width: 455px;
+			border: 1px solid black;
+		}
+
+		.text
+		{
+			background-color: red;
+			border-radius: 20px 20px 0px 0px;
+			color: white;
+			border: none;
+			width: 451px;
+			height: 90px;
+			font-size: 40px;
+			font-weight: bolder;
+			text-align: right;
+		}
+		.keyboard
+		{
+			padding: 20px;
+			background-color: white;
+			border-radius: 0px 0px 10px 10px;
+			border: none;
+		}
+		.key
+		{
+			box-shadow: 5px 5px 10px #ECEDEF;
+			margin: 2px;
+			font-size: 26px;
+			height: 55px;
+			width: 75px;
+			border: none;
+			border-radius: 5px;
+			background: #ECEDEF;
+			color: #5F5959;
+			font-weight: bolder;
+		}
+		p
+		{
+			font-size: 20px;
+			color: #5F5959;
+			font-weight: bolder;
+			margin-bottom: 7px;
+		}
+		.cal2
+		{
+			width: 400px;
+			height: 45px;
+			background: red;
+			color: white;
+			border: none;
+			font-size: 20px;
+			font-weight: bolder;
+			border-radius: 5px;
+			text-align: left;
+			margin-top: 3px;
+		}
+
+		.red
+		{
+			background-color: red !important;
+			color: white;
+		}
+		.margin
+		{
+			margin-bottom: 25px;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		
+		var fval , lval , cal;
+		function getdata(x) 
+		{
+			document.getElementById('disp').value += x;
+		}
+		function sum(a)
+		{
+			fval = document.getElementById('disp').value;
+			cal = a;
+			document.getElementById('disp').value = '';
+		}
+		function sub(b) 
+		{
+			fval = document.getElementById('disp').value;
+			cal = b;
+			document.getElementById('disp').value = '';
+		}
+		function mul(c) 
+		{
+			fval = document.getElementById('disp').value;
+			cal = a;
+			document.getElementById('disp').value = '';
+		}
+		function div(d) 
+		{
+			fval = document.getElementById('disp').value;
+			cal = a;
+			document.getElementById('disp').value = '';
+		}
+		function sign() 
+		{
+			lval = document.getElementById('disp').value;
+			document.getElementById('disp').value = '';
+
+			if(cal==10)
+			{
+				var data = parseFloat(fval) + parseFloat(lval);
+			}
+			else if(cal==11)
+			{
+				var data = parseFloat(fval) - parseFloat(lval);
+			}
+			else if(cal==12)
+			{
+				var data = parseFloat(fval) * parseFloat(lval);
+			}
+			else if(cal==13)
+			{
+				var data = parseFloat(fval) / parseFloat(lval);
+			}
+			document.getElementById('disp').value = data;
+		}
+		function nul()
+		{
+			document.getElementById('disp').value = '';
+		}
+		function dele()
+		{
+			var s = document.getElementById('disp').value;
+			var n = s.substring(0,s.length-1); 
+			document.getElementById('disp').value = n;
+		}
+
+		function bin()
+		{
+			var n = 0;
+			var binery = "";
+			var x = document.getElementById('disp').value;
+			while(x>0)
+			{
+				n = x%2;
+				x = (x-n)/2;
+				binery = n+binery;
+			}
+			document.getElementById('bin').value = binery;
+		}
+		function oct()
+		{
+			var n = 0;
+			var octal = "";
+			var x = document.getElementById('disp').value;
+			while(x>0)
+			{
+				n = x%8;
+				x = (x-n)/8;
+				octal = n + octal;
+			}
+			document.getElementById('oct').value = octal;
+		}
+		function dec()
+		{
+			var n = 0;
+			var decimal = "";
+			var x = document.getElementById('disp').value;
+
+			document.getElementById('dec').value = x;
+		}
+		function hex()
+		{
+			var n = 0;
+			var hex = "";
+			var x = document.getElementById('disp').value;
+
+			while(x>0)
+			{
+				n = x%16;
+				x = (x-n)/16;
+
+				if(n==10)
+				{
+					hex = "A" + hex;
+					document.getElementById('hex').value=hex;
+				}
+				else if(n==11)
+				{
+					hex = "B" + hex;
+					document.getElementById('hex').value=hex;
+				}
+				else if(n==12)
+				{
+					hex = "C" + hex;
+					document.getElementById('hex').value=hex;
+				}
+				else if(n==13)
+				{
+					hex = "D" + hex;
+					document.getElementById('hex').value=hex;
+				}
+				else if(n==14)
+				{
+					hex = "E" + hex;
+					document.getElementById('hex').value=hex;
+				}
+				else if(n==15)
+				{
+					hex = "F" + hex;
+					document.getElementById('hex').value=hex;
+				}
+				else
+				{
+					hex = n + hex;
+					document.getElementById('hex').value = hex;
+				}
+			}
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<div class="box">
+		<div class="disp">
+			<input type="text" name="" readonly class="text" id="disp">
+		</div>
+		<div class="keyboard">
+			<div class="cal">
+				<p>HEX:- <input readonly type="text" class="cal2" id="hex" onclick="hex()"></p>
+				<p>DEC:- <input readonly type="text" class="cal2" id="dec" onclick="dec()"></p>
+				<p>OCT:- <input readonly type="text" class="cal2" id="oct" onclick="oct()"></p>
+				<p>BIN:- <input readonly type="text" class="cal2 margin" id="bin" onclick="bin()"></p>
+			</div>
+			<div class="keybox">
+				<button class="key" onclick="getdata('A')">A</button>
+				<button class="key" onclick="hex()">HEX</button>
+				<button class="key" onclick="dec()">DEC</button>
+				<button class="key" onclick="dele()">C</button>
+				<button class="key" onclick="nul()">CE</button>
+			</div>
+			<div class="keybox">
+				<button class="key" onclick="getdata('B')">B</button>
+				<button class="key" onclick="oct()">OCT</button>
+				<button class="key" onclick="bin()">BIN</button>
+				<button class="key" onclick="getdata()">%</button>
+				<button class="key" onclick="div(13)">/</button>
+			</div>
+			<div class="keybox">
+				<button class="key" onclick="getdata('C')">C</button>
+				<button class="key" onclick="getdata('7')">7</button>
+				<button class="key" onclick="getdata('8')">8</button>
+				<button class="key" onclick="getdata('9')">9</button>
+				<button class="key" onclick="mul(12)">*</button>
+			</div>
+			<div class="keybox">
+				<button class="key" onclick="getdata('D')">D</button>
+				<button class="key" onclick="getdata('4')">4</button>
+				<button class="key" onclick="getdata('5')">5</button>
+				<button class="key" onclick="getdata('6')">6</button>
+				<button class="key" onclick="sub(11)">-</button>
+			</div>
+			<div class="keybox">
+				<button class="key" onclick="getdata('E')">E</button>
+				<button class="key" onclick="getdata('1')">1</button>
+				<button class="key" onclick="getdata('2')">2</button>
+				<button class="key" onclick="getdata('3')">3</button>
+				<button class="key" onclick="sum(10)">+</button>
+			</div>
+			<div class="keybox">
+				<button class="key" onclick="getdata('F')">F</button>
+				<button class="key" onclick="getdata()">+/-</button>
+				<button class="key" onclick="getdata('0')">0</button>
+				<button class="key" onclick="getdata()">.</button>
+				<button class="key red" onclick="sign()">=</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

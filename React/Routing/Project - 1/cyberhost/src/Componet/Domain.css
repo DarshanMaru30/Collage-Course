@@ -1,0 +1,72 @@
+.domain{
+    padding: 200px 0px;
+    background-color: rgba(45, 190, 96, 0.1);
+    border-bottom: 1px solid #2dbe60;
+}
+.domain .form_input{
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    line-height: 60px;
+    width: 100%;
+    display: block;
+    padding: 0 15px;
+    font-size: 16px;
+    height: 60px;
+}
+.xs{
+    padding: 0 5px;
+    margin-bottom: 15px;
+}
+.domain .submit{
+    background-color: #2dbe60;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 25px;
+    line-height: 60px;
+    border: none;
+}
+@media (min-width : 768px) {
+    .col-md-3,.col-md-6{
+        float: left;
+    }
+}
+.padding1{
+    padding: 88px 0;
+}
+.table_style{
+    border: 1px solid #ddd;
+    text-align: center;
+    table-layout: fixed;
+    /* padding: 8px !important; */
+}
+.table_style span{
+    color: #2dbe60;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 15px 0px !important;
+    display: block;
+}
+.table_style tbody tr td{
+    padding: 20px 0;
+    color: #777;
+}
+@media (max-width : 1190px) {
+    .table_style span{
+        font-size: 10px;
+    }
+    .table_style tbody tr td{
+        font-size: 14px;
+    }
+}
+@media (max-width : 991px) {
+    .table_style span{
+        font-size: 7px;
+        font-weight: bolder;
+    }
+    .table_style tbody tr td{
+        font-size: 12px;
+    }
+}

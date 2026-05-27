@@ -1,0 +1,16 @@
+.heloo{
+    height: 400px;
+    width: 800px;
+    background-color: aqua;
+    margin-bottom: 15px;
+}
+.del button{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.now{
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite;
+    margin-bottom: 15px;
+}

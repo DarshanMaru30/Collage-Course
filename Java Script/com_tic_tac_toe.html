@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Tic Tac Toe</title>
+
+    <style type="text/css">
+            
+        .main {
+            width: 390px;
+            margin: auto;
+        }
+
+        input[type="button"] {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            float: left;
+            border: 2px solid white;
+            border-radius: 20px;
+            color: #ffd60a;
+            font-size: 60px;
+        }
+
+        .main h2 {
+            font-size: 35px;
+            text-align: center;
+            margin-left: -75px;
+        }
+        .reset{
+            margin-top: 200px;
+            margin-left: -180px;
+            padding: 13px;
+            border-radius: 15px;
+            font-size: 16px;
+            background-color: black;
+            border: btn2px solid white;
+            color: white;
+            transition: .3s;
+        } 
+
+    </style>
+
+<script>
+    var t = 0;
+
+    function cal(x) {
+        var k = document.getElementById('btn' + x).value;
+
+        document.getElementById('btn' + x).value = 'X';
+
+        // checkwin();
+        
+        // if (t < 4) {
+        //     // Make the computer's move
+        //     setTimeout(computerMove, 500);
+        //     // console.log(t);
+        // }
+        computerMove();
+
+    }
+
+    function checkwin() {
+        var btn1 = document.getElementById('btn1').value;
+        var btn2 = document.getElementById('btn2').value;
+        var btn3 = document.getElementById('btn3').value;
+        var btn4 = document.getElementById('btn4').value;
+        var btn5 = document.getElementById('btn5').value;
+        var btn6 = document.getElementById('btn6').value;
+        var btn7 = document.getElementById('btn7').value;
+        var btn8 = document.getElementById('btn8').value;
+        var btn9 = document.getElementById('btn9').value;
+
+        win(btn1, btn2, btn3, "X");
+        win(btn4, btn5, btn6, "X");
+        win(btn7, btn8, btn9, "X");
+        win(btn1, btn4, btn7, "X");
+        win(btn2, btn5, btn8, "X");
+        win(btn3, btn6, btn9, "X");
+        win(btn1, btn5, btn9, "X");
+        win(btn3, btn5, btn7, "X");
+
+        win(btn1, btn2, btn3, "O");
+        win(btn4, btn5, btn6, "O");
+        win(btn7, btn8, btn9, "O");
+        win(btn1, btn4, btn7, "O");
+        win(btn2, btn5, btn8, "O");
+        win(btn3, btn6, btn9, "O");
+        win(btn1, btn5, btn9, "O");
+        win(btn3, btn5, btn7, "O");
+    }
+
+    function win(v1, v2, v3, sign) {
+        if (v1 == sign && v2 == sign && v3 == sign) {
+            alert(sign + " is Won the Match");
+            // for (i = 1; i <= 9; i++) {
+            //     document.getElementById('btn' + i).value = "";
+            // }
+        }
+    }
+
+    function reset() {
+        for (i = 1; i <= 9; i++) {
+            document.getElementById('btn' + i).value = "";
+        }
+        t = 0;
+    }
+
+    function computerMove() {
+        if (t >= 4) {
+            // debugger
+            // Check if the game is already won or it's a draw
+            return;
+        }
+
+        var f = 0;
+        while (f === 0) {
+            // debugger
+            var z = Math.floor(Math.random() * 9) + 1;
+            var btn = document.getElementById('btn' + z);
+            if (btn.value === "") {
+                btn.value = "O";
+                f++;
+                checkwin();
+            }
+        }
+        t++;
+        if(t == 9){
+            alert("Match Draw");
+        }
+    }
+</script>
+
+
+</head>
+
+<body>
+
+    <div class="main">
+        <h2>Tic Tac Toe</h2>
+
+        <input type="button" id="btn1" onclick="cal('1')" name="" value="">
+        <input type="button" id="btn2" onclick="cal('2')" name="" value="">
+        <input type="button" id="btn3" onclick="cal('3')" name="" value="">
+        <br><br>
+        <input type="button" id="btn4" onclick="cal('4')" name="" value="">
+        <input type="button" id="btn5" onclick="cal('5')" name="" value="">
+        <input type="button" id="btn6" onclick="cal('6')" name="" value="">
+        <br><br>
+        <input type="button" id="btn7" onclick="cal('7')" name="" value="">
+        <input type="button" id="btn8" onclick="cal('8')" name="" value="">
+        <input type="button" id="btn9" onclick="cal('9')" name="" value="">
+        <br><br>
+        <button onclick="reset()" class="reset">Reset</button>
+
+        <!-- <div class="side">
+
+            <div class="line">
+                <hbtn2>Result:</hbtn2><input type="text" id="display" readonly>
+            </div>
+            <div class="line"><input type="button" onclick="reset()" id="resrt" value="Reset" readonly></div>
+        </div>
+    </div> -->
+   <!--  <script>
+        document.getElementById('resrt').disabled = true;
+
+    </script> -->
+</body>
+
+</html>

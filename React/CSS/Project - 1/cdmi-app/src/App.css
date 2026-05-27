@@ -1,0 +1,476 @@
+body{
+  font-family: 'roboto';
+}
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container{
+  width: 1100px;
+  margin: auto;
+}
+.p-top{
+  padding-top: 100px;
+}
+.p-bottom{
+  padding-bottom: 90px;
+}
+
+/* Header Start */
+.header{
+  background-color: #003366;
+  color: white;
+}
+.h_third p{
+  margin-right: 12px;
+}
+.h_first i{
+  margin-right: 5px;
+  margin-left: 10px;
+}
+.h_image{
+  width: 250px;
+}
+/* Header End */
+
+/* Main  Menu Start */
+ul{
+  list-style: none;
+  cursor: pointer;
+  /* margin-top: 6px; */
+}
+.h_image{
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+ul li a{
+  margin: 0px 10px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/* Main Menu End */
+
+/* Slider Start */
+.slider img{
+  margin: 0;
+  width: 100%;
+}
+/* Slider End */
+
+/* Course Start */
+.heading .sub-heading p,h1{
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.heading .sub-heading p{
+  position: relative;
+}
+.heading p::before{
+  height: 3px;
+  width: 30px;
+  background-color: #FFBC06;
+  position: absolute;
+  top: 43%;
+  left: 43%;
+  content: '';
+}
+.c_title{
+  padding: 0px 10px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.box .c_btn .c_btn1{
+  margin: -4px 0px;
+}
+.box .c_btn{
+  padding: 0px 10px;
+}
+.c_btn1 div{
+  margin-right: 3px;
+  color: #FFBC06;
+}
+.box .c_btn button{
+  background-color: #003366 ;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+}
+.box{
+  margin-bottom: 30px;
+}
+.box img{
+  margin-top: 20px;
+  border-radius: 10px 10px 0px 0px;
+}
+.c_final div{
+  text-align: center;
+}
+.c_final button{
+  padding: 13px 30px;
+  font-size: 16px;
+  background-color: #FFBC06;
+  border-radius: 5px 5px;
+  color: white;
+  border: none;
+  margin-top: 30px;
+}
+.c_final div i{
+  margin-left: 10px;
+}
+.box button{
+  border-radius: 5px 5px;
+}
+/* Course End */
+
+/* About start */
+.a-pic{
+  width: 700px;
+  height: 450px;
+  object-fit: cover;
+}
+.about{
+  position: relative;
+}
+.about .text{
+  width: 50%;
+  margin-left: 70px;
+}
+.about .a_title{
+  position: absolute;
+  top: 10%;
+  color: #888888;
+  margin-left: 40px;
+}
+.about .a_sub{
+  position: absolute;
+  top: 17%;
+}
+.about .a_sec{
+  position: absolute;
+  color: #888888;
+  top: 23%;
+  width: 45%;
+  font-size: 18px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.about .a_btn{
+  position: absolute;
+  top: 73%;
+}
+.about .a_btn button{
+  background-color: #FFBC06;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 17px;
+  border-radius: 5px 5px;
+}
+.about .a_btn i{
+  margin-left: 10px;
+}
+.about .text .a_title::before{
+  height: 2px;
+  width: 30px;
+  background-color: #FFBC06;
+  content: '';
+  position: absolute;
+  top: 47%;
+  left: -60%;
+}
+.border{
+  height: 470px;
+  width: 950px;
+  /* position: absolute; */
+  /* z-index: 0; */
+  /* border: 1px solid black; */
+  border-radius: 0px 250px 250px 0px;
+  box-shadow: 0.5px 0.5px 10px black;
+}
+/* About End */
+
+/* Number Start */
+.number img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.number{
+  position: relative;
+}
+.num_text{
+  position: absolute;
+  top: 30%;
+  left: 16%;
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+}
+.number::before{
+  width: 100%;
+  height: 76%;
+  background-color: rgba(7, 41, 77, 0.70);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.number .num-data img{
+  width: 50px;
+  height: 50px;
+}
+.number .num-data .container{
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 14%;
+  text-align: center;
+  color: white;
+  justify-content: space-evenly;
+}
+/* Number End */
+
+/* Happy Students Start */
+.happy .ha-pra{
+  text-align: justify;
+  color: #888888;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.happy .happy-text{
+  width: 90%;
+}
+.happy .happy-text i{
+  margin-right: 20px;
+}
+.happy .happy-pic{
+  width: 500px;
+  border-radius: 500px;
+}
+.happy .ha-ma{
+  width: 80px;
+  border-radius: 50%;
+}
+.happy .ha-pro{
+  display: flex;
+  margin-left: 10px;
+}
+.happy .ha-pro h3{
+  margin-bottom: 10px;
+  margin-top: 8px; 
+}
+.happy .ha-pro .pic-p{
+  margin-left: 13px;
+}
+.happy .ha-pro .pic-p div{
+  color: #FFBC06;
+}
+.happy .ha-pro .pic-p div span{
+  color: #888888;
+}
+.happy .ha-title .line{
+  position: relative;
+  margin-left: 25px;
+}
+.happy .ha-title .line::before{
+  width: 17px;
+  height: 2px;
+  background-color: #FFBC06;
+  content: '';
+  position: absolute;
+  left: -4%;
+  top: 42%;
+}
+/* Happy Students End */
+
+/* Why Choose Start */
+.why .wh-sub section{
+  text-align: center;
+  position: relative;
+}
+.why .wh-main h1{
+  margin-bottom: 60px;
+}
+.why .wh-box .wh-pic{
+  text-align: center;
+}
+.why .wh-box .wh-pic .wh-ima1{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  background-color: #F6475F;
+}
+.why .wh-box .wh-pic .wh-ima2{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  background-color: #FFBC06;
+}
+.why .wh-box .wh-pic .wh-ima3{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  background-color: #B3D369;
+}
+.why .wh-box .wh-pic .wh-ima4{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  background-color: #554DA7;
+}
+.why .wh-box .wh-pic .wh-ima5{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  background-color: #4382FF;
+}
+.why .wh-box .wh-pic .wh-ima6{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  background-color: #F94FA4;
+}
+.why .wh-pit{
+  text-align: center;
+  color: #888888;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+.why .wh-til{
+  text-align: center;
+}
+.why .wh-1,.wh-2,.wh-3{
+  width: 30%;
+}
+.why .wh-box{
+  margin-bottom: 50px;
+}
+.why .wh-sub section::before{
+  width: 17px;
+  height: 2px;
+  background-color: #FFBC06;
+  content: '';
+  position: absolute;
+  left: 43%;
+  top: 42%;
+}
+/* Why Choose End */
+
+/* Student Placement Strat */
+.placement .pl-sub section{
+  text-align: center;
+  position: relative;
+}
+.st-logo img{
+  width: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+.placement .pl-main h1{
+  margin-bottom: 60px;
+}
+.d-flex2
+{
+  display: flex;
+  justify-content: space-around;
+}
+.placement .pl-sub section::before{
+  width: 15px;
+  height: 2px;
+  background-color: #FFBC06;
+  content: '';
+  position: absolute;
+  left: 43%;
+  top: 42%;
+}
+/* Student Placement End */
+
+/* Our Course start */
+.our{
+  padding-bottom: 40px;
+}
+.our .our-btn button{
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 2px 5px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+/* Our Course End */
+
+/* Footer Start */
+.footer{
+  background-color: #003366;
+  padding: 70px;
+  color: white;
+}
+.footer .col-1{
+  width: 35%;
+}
+.footer .footer-lo img{
+  width: 350px;
+}
+.footer .foo-text section{
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  font-size: 13px;
+  margin-top: 13px;
+}
+.footer .foo-link{
+  color: #FFBC06;
+  margin-top: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.foo-tag{
+  display: flex;
+}
+.foo-tag p{
+  background-color: rgba(255,255,255,0.1);
+  margin-right: 7px;
+  padding: 4px;
+  border-radius: 5px;
+  line-height: 1;
+}
+.col-2{
+  margin-top: -75px;
+}
+.col-3{
+  width: 36%;
+  padding-top: 60px;
+}
+.footer .col-2 .col-2_tex i{
+  margin-right: 7px;
+}
+.col-3 p i{
+  margin-right: 10px;
+}
+.color{
+  color: #FFBC06;
+}
+.bottom_footer{
+  background-color: #072044;
+  color: white;
+  padding: 15px;
+}
+/* Footer End */

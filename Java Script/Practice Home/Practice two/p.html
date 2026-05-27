@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+
+    <script>
+
+        // function getval()
+        // {
+        //     // document.getElementById('one').innerHTML = "Maru";
+
+        //     // document.getElementById('one').style.color = "Red";
+
+
+        //     // document.getElementsByClassName('one')[3].innerHTML = "Maru";
+
+        //     var x = document.getElementsByClassName('one');
+
+        //     for(i = 0 ; i < x.length ; i++)
+        //     {
+        //         x[i].innerHTML = "Maru";
+        //         x[i].style.color = "Red";
+        //         x[i].style.backgroundColor = "Yellow";
+        //     }
+        // }
+
+        // const message = 10;
+        // message = 12;
+        // alert(message);
+
+        // let value = 10;
+        // value = Float(value);
+        // alert(typeof value);
+
+        // let userName = 'John';
+        //     function showMessage() {
+        //      userName = "Bob"; // (1) changed the outer variable
+        //      let message = 'Hello, ' + userName;
+        //      alert(message);
+        //     }
+        //     alert( userName ); // John before the function call
+        //     showMessage();
+        //     alert( userName ); // Bob, the value was modified by the function
+
+//         function showMessage(text) {
+//  // ...
+//  if (text === undefined) { // if the parameter is missing
+//  text = 'empty message';
+//  }
+//  alert(text);
+// }
+// showMessage();
+
+        // function ask(question,yes,no) {
+            
+        //     if(confirm(question)) yes();
+        //         else
+        //             no();
+        // }
+        // function showok()
+        // {
+        //     alert("You Aggred");
+        // }
+        // function shownotok()
+        // {
+        //     alert("You not aggreed");
+        // }
+        // ask("Do you Aggred...?",showok,shownotok);
+
+        // let get = (a) => {
+        //     alert("Call Get Function "+a);
+        // }
+        // get(12);
+
+        // let user = {
+        //     name : "Dashan",
+        //     age : 18
+        // }
+        // // document.write(user.name);
+        // user.city = "surat";
+        // delete user.age;
+        // console.log(user);
+
+        // let fruit = ["Apple","Graps","Banana","Orange"];
+
+        // alert(fruit[0]);
+        // alert(fruit[2]);
+        // alert(fruit[3]);
+        // alert(fruit[1]);
+
+        // let fruit = ["Apple","Graps","Banana","Orange"];
+        // fruit.push("Mengo");
+        // fruit.pop("Mengo");
+        // fruit.unshift("Mango");
+        // fruit.shift();
+        // console.log(fruit);
+        // alert(fruit);
+
+                // let fruit = ["Apple","Graps","Banana","Orange"];
+                // for(let frui of fruit)
+                // {
+                //     alert(frui);
+                // }
+
+        // let fruit = ["Apple","Graps","Banana","Orange","Dar","Shiv"];
+        // alert(fruit.slice(1,4));
+        // alert(fruit.slice(-3));
+
+        // let fruit = ["Apple","Graps","Banana","Orange","Dar","Shiv"];
+        // let fru = ["Div"];
+        // alert(fruit.concat(fru));
+
+        // let fruit = ["Apple","Graps","Banana","Graps","Dar","Shiv"];
+        // alert(fruit.lastIndexOf("Graps"));
+
+        // let users = [
+        //  {id: 1, name: "John"},
+        //  {id: 2, name: "Pete"},
+        //  {id: 3, name: "Mary"}
+        // ];
+        // let user = users.find(function(item){
+        //     alert(user);
+        // });
+
+        // let arr = ['1','31','6','4','65'];
+        // console.log(arr);
+        // arr.sort();
+        // alert(arr);
+
+        // let arr = [1,2,3,4,5,6,7,8,9];
+        // arr.reverse();
+        // alert(arr);
+
+        // var arr = ['One','Two','Three','Four','Five'];
+        // var res = arr.map(function(ele,ind,array){
+        //     return ele.length;
+        // })
+        // console.log(res);
+
+        // var arr = [1,2,3,4,5];
+        // var data = arr.find((item,ind,arr1) => console.log("item = "+item+"ind = "+ind+"arr = "+arr1));
+
+        // var str = ('one','two','three','four','four','five');
+        // var res = str.split('');
+        // for(let name of res)
+        // {
+        //     console.log("Name = "+name);
+        // }
+
+        var obj = {
+            name : "Darshan",
+            Email : "Darshan123@gmail.com",
+            Contct : 123,
+        }
+        let {name,Email,Contct} = obj;
+        document.write(name);
+
+    </script>
+
+</head>
+<body>
+
+   <!--  <h1 class="one" >Darshan</h1>
+    <h1 class="one" >Darshan</h1>
+    <h1 class="one" >Darshan</h1>
+    <h1 class="one" >Darshan</h1>
+    <h1 class="one" >Darshan</h1>
+
+    <input type="button" onclick="getval()" name="" value="Click Me"> -->
+    
+</body>
+</html>

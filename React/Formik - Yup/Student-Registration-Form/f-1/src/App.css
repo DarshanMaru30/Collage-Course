@@ -1,0 +1,23 @@
+.App{
+  background-color: black;
+  padding: 50px 0;
+}
+.cool{
+  width: 50% !important;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+} 
+.design{
+  border: 2px solid #6A6764 !important;
+}
+.btn{
+  background-color: #6A6764 !important;
+  color: white !important;
+  border: 0 !important;
+}
+label{
+  color: #6A6764 !important;
+  font-weight: 500;
+}

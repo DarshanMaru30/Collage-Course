@@ -1,0 +1,45 @@
+.cat-name{
+    background-color: #2874F0;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fram{
+    height: 95vh;
+    overflow: auto;
+}
+.pro_box{
+    height: 95vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.card_img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.rate{
+    background-color: green;
+    display: inline-block;
+    color: white;
+    padding: 2px 4px 2px 4px;
+    border-radius: 2px;
+}
+.star{
+    margin-left: 2px;
+}
+.dis{
+    border-radius: 2px;
+    display: inline-block;
+    background-color: red;
+    padding: 2px 4px 2px 4px;
+    color: white;
+}
+.pro button{
+    background-color: yellow;
+    border: 0;
+    color: black;
+}

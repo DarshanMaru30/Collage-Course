@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slider</title>
+
+	<script type="text/javascript">
+		
+		var temp = 0;
+		var img1 = document.getElementsByClassName('img');
+		console.log(img1)
+		function slider()
+		{
+			var img = document.getElementsByClassName('img');
+
+			for(i = 0; i < img.length; i++)
+			{
+				img[i].style.display = "none";
+			}
+			img[temp].style.display = "block";
+		}
+
+		function prev()
+		{
+			temp--;
+			if(temp == 0)
+			{
+				document.getElementById('prev').disabled = true;
+			}
+			else
+			{
+				document.getElementById('next').disabled = false;
+			}
+			slider()
+		}
+		function next()
+		{
+			temp++;
+			if(temp==img1.length-1)
+			{
+				document.getElementById('next').disabled = true;
+			}
+			else
+			{
+				document.getElementById('prev').disabled = false;
+			}
+			slider()
+		}
+
+		window.onload = function()
+		{
+			slider()
+		}
+
+	</script>
+
+	<style>
+		
+	.box
+	{
+		margin: auto;
+		width: 800px;
+	}
+	.btn
+	{
+		font-size: 20px;
+		cursor: pointer;
+	}		
+	img
+	{
+		object-fit: cover;
+	}
+	.main
+	{
+		margin: 20px 360px;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="box">
+		<img src="Images/1.jpg" height="500px" width="100%" class="img">
+		<img src="Images/2.jpg" height="500px" width="100%" class="img">
+		<img src="Images/3.jpg" height="500px" width="100%" class="img">
+		<img src="Images/4.jpg" height="500px" width="100%" class="img">
+		<img src="Images/5.jpg" height="500px" width="100%" class="img">
+		<img src="Images/6.jpg" height="500px" width="100%" class="img">
+	</div>
+	<div class="main">
+		<input class="btn" type="button" id="prev" onclick="prev()" value="Prev">
+		<input class="btn" type="button" id="next" onclick="next()" value="Next">
+	</div>
+
+</body>
+</html>

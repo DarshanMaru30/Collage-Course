@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+
+    <script>
+
+        function data()
+        {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var contact = document.getElementById('contact').value;
+            var gender = document.getElementsByClassName('gender');
+            var hobby = document.getElementsByClassName('hobby');
+            var city = document.getElementById('city').value;
+            var add = document.getElementById('add').value;
+            
+            if(name == '')
+            {
+                alert("Enter Name...!");
+                return false;
+            } 
+            var same = /^[a-zA-Z]+ [a-zA-Z]+$/;
+            // var same2 = name.match(same);
+
+            if(!name.match(same))
+            {
+                alert("Only Alphabets Are Allowed In Name...!");
+                return false;
+            }
+            if(email == '')
+            {
+                alert("Enter Email...!");
+                return false;
+            }
+            var e1 = /^[a-zA-Z0-9+_.-]+@[g][m][a][i][l][.][c][o][m]+$/g;
+            var e2 = email.match(e1);
+
+            if(e2 == null)
+            {
+                alert("Enter Valid Email...!");
+                return false;
+            }
+            if(password == '')
+            {
+                alert("Enter PassWord...!");
+                return false;
+            }
+            var pass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,15}$/;
+
+            if(!password.match(pass))
+            {
+                alert("Enter Valid PassWord...!");
+                return false;
+            }
+            if(contact == '')
+            {
+                alert("Enter Contact...!");
+                return false;
+            }
+            var con = /[0-9]/g;
+            var result = contact.match(con);
+
+            if(result == null)
+            {
+                alert("Enter Valid Contact Number...!");
+                return false;
+            }
+            if(result.length != 10)
+            {
+                alert("Enter Valid Contact Number...!");
+                return false;
+            }
+            if(gender[0].checked == false && gender[1].checked == false)
+            {
+                alert("Select Gender...!");
+                return false;
+            }
+            if(hobby[0].checked == false && hobby[1].checked == false && hobby[2].checked == false && hobby[3].checked == false)
+            {
+                alert("Select Hobby...!");
+                return false;
+            }
+            if(city == '')  
+            {
+                alert("Select City...!");
+                return false;
+            }
+            if(add == '')
+            {
+                alert("Enter Address...!");
+                return false;
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <h1 align="center">Form Validation</h1>
+    <form action="" onsubmit="return data()">
+        <table border="10" align="center">
+            <tr>
+                <td>Name : </td>
+                <td width="100"><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email : </td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>PassWord : </td>
+                <td><input type="text" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>Conatact : </td>
+                <td><input type="text" name="contact" id="contact"></td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td>
+                    <input type="radio" name="gender" class="gender">Male
+                    <input type="radio" name="gender" class="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby : </td>
+                <td>
+                    <input type="checkbox" name="hobby" class="hobby">Dance<br>
+                    <input type="checkbox" name="hobby" class="hobby">Garba<br>
+                    <input type="checkbox" name="hobby" class="hobby">Swim<br>
+                    <input type="checkbox" name="hobby" class="hobby">Run
+                </td>
+            </tr>
+            <tr>
+                <td>City : </td>
+                <td>
+                    <select id="city">
+                        <option value="" selected disabled >---Select City---</option>
+                        <option>Surat</option>
+                        <option>Vapi</option>
+                        <option>Bharuch</option>
+                        <option>Vadodra</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Address : </td>
+                <td><textarea name="" id="add" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"  align="center"><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

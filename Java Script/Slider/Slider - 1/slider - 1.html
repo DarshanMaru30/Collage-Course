@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slider</title>
+
+
+	<script type="text/javascript">
+		
+		temp = 0
+
+		function slider()
+		{
+			var img = document.getElementsByClassName('img');
+
+			for(i = 0; i < img.length; i++)
+			{
+				img[i].style.display = "none";
+			}
+			if(temp==6)
+			{
+				temp=0;
+			}
+			else if(temp==-1)
+			{
+			 	temp=5;
+			}
+			img[temp].style.display = "block";
+		}
+
+		 function prev()
+		 {
+		 	temp--;
+		 	slider();
+		 }
+		 function next()
+		 {
+		 	temp++;
+		 	slider();
+		 }
+
+		 window.onload = function()
+		 {
+		 	slider();
+		 }
+
+	</script>
+
+	<style type="text/css">
+		.btn
+		{
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 50%;
+			padding: 10px 20px;
+			border: none;
+			color: white;
+			font-size: 40px;
+			cursor: pointer;
+		}
+		.main
+		{
+			width: 99%;
+			display: flex;
+			justify-content: space-between;
+			position: absolute;
+			top: 37%;
+		}
+	</style>
+
+</head>
+<body>
+
+	<img src="Images/1.jpg" height="600px" width="100%" class="img">
+	<img src="Images/2.jpg" height="600px" width="100%" class="img">
+	<img src="Images/3.jpg" height="600px" width="100%" class="img">
+	<img src="Images/4.jpg" height="600px" width="100%" class="img">
+	<img src="Images/5.jpg" height="600px" width="100%" class="img">
+	<img src="Images/6.jpg" height="600px" width="100%" class="img">
+
+	<div class="main">
+		<input class="btn" type="button" onclick="prev()" value="<">
+		<input class="btn" type="button" onclick="next()" value=">">
+	</div>
+</body>
+</html>

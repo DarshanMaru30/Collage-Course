@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <style>
+        * {
+            outline: 0;
+            font-family: sans-serif;
+        }
+
+        #table {
+            display: none;
+            margin: 100px auto;
+        }
+
+        .box {
+            display: flex;
+        }
+
+        .box p {
+            width: 100px;
+            border-bottom: 1px solid grey;
+            margin: 0;
+            padding: 5px 10px;
+        }
+        .calculator{
+        	display: flex;
+        	flex-direction: column;
+        	width: 300px;
+        	margin: auto;
+        	border: 1px solid black;
+        }
+        .box input{
+        	width: 200px;
+        	border: 0;
+        	border-left: 1px solid black;
+        	border-bottom: 1px solid black;
+        }
+        button{
+            cursor: pointer;
+        	border: 0;
+            transition: .5s;
+        	padding: 10px 10px;
+        }
+        button:hover
+        {
+            color: white;
+            background: blue;
+        }
+        h2{
+        	text-align: center;
+        	padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+	<div class="cover">
+	<h2>AGE CALCULATOR</h1>
+	<div class="calculator">
+    		<div class="box"><p>DOB </p><input type="date" id="date1" min="2000-01-01" max="2005-12-31"></div>
+    		<div class="box"><p>TODAY </p><input type="date" id="date2"></div>
+    		<button onclick="cal()">CLICK TO GET AGE</button>
+	</div>
+	</div>
+    <div id="table">
+        <div class="box">
+            <h2>You Already Lived</h2>
+        </div>
+        <div class="box">
+            <p>Year</p>
+            <p id="Iyear"></p>
+        </div>
+        <div class="box">
+            <p>Months</p>
+            <p id="IMonths"></p>
+        </div>
+        <div class="box">
+            <p>Weeks</p>
+            <p id="Iweek"></p>
+        </div>
+        <div class="box">
+            <p>Day</p>
+            <p id="Iday"></p>
+        </div>
+        <div class="box">
+            <p>Hours</p>
+            <p id="Ihours"></p>
+        </div>
+        <div class="box">
+            <p>Minutes</p>
+            <p id="IMin"></p>
+        </div>
+        <div class="box">
+            <p>Seconds</p>
+            <p id="Isec"></p>
+        </div>
+    </div>
+
+    <script>
+        var d1 = document.getElementById('date1');
+        var d2 = document.getElementById('date2');
+        var txt = document.getElementById('txt');
+        function cal() {
+            if (!d1.value || !d2.value) {
+                alert("plz Select valid Dates...!");
+            } else {
+                const dob = new Date(d1.value);
+                const today = new Date(d2.value);
+                const milisecond = today - dob;
+                const second = milisecond / 1000;
+                const mintus = second / 60;
+                const hours = mintus / 60;
+                const day = hours / 24;
+                const week = Math.floor(day / 7);
+                const month = (today.getMonth() - dob.getMonth()) + (12 * (today.getFullYear() - dob.getFullYear()));
+                const year = Math.floor(month / 12);
+                document.getElementById('Iyear').innerHTML = year;
+                document.getElementById('IMonths').innerHTML = month;
+                document.getElementById('Iweek').innerHTML = week;
+                document.getElementById('Iday').innerHTML = day;
+                document.getElementById('Ihours').innerHTML = hours;
+                document.getElementById('IMin').innerHTML = mintus;
+                document.getElementById('Isec').innerHTML = second;
+                document.getElementById('table').style.display = "inline-block";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

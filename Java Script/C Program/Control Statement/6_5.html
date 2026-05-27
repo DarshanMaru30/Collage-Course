@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script type="text/javascript">
+		
+		var a = 30,b = 10,c = 10;
+
+		if(a==b)
+		{
+			if(a==c)
+			{
+				document.write("A B C is Same");
+			}
+			else
+			{
+				if(c<b)
+				{
+					document.write("A B is Same And C is Min");
+				}
+				else
+				{
+					document.write("A B is Same And C is Max");
+				}
+			}
+		}
+		else
+		{
+			if(b==c)
+			{
+				if(a<b)
+				{
+					document.write("B C is Same And A is Min");
+				}
+				else
+				{
+					document.write("B C is Same And A is Max");
+				}
+			}
+			else
+			{
+				if(c==a)
+				{
+					if(b<a)
+					{
+						document.write("A C is Same And B is Min");
+					}
+					else
+					{
+						document.write("A C is Same And B is Max");
+					}
+				}
+				else
+				{
+					document.write("A B C is Different");
+				}
+			}
+		}
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

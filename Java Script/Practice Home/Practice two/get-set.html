@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get & Set Value Practice</title>
+
+    <script>
+
+        function getdata()
+        {
+            var no1 = document.getElementById('n1').value;
+            var no2 = document.getElementById('n2').value;
+            
+            var ans = parseInt(no1) + parseInt(no2);
+            
+            document.getElementById('click').value = ans;
+            // alert(ans);
+        }
+
+    </script>
+
+</head>
+<body>
+
+    No-1 : <input type="text" id="n1" name="">
+    No-2 : <input type="text" id="n2" name="">
+
+    <input type="button" name="" value="Click Me" onclick="getdata()">
+    <input type="text" name="" readonly id="click">
+
+</body>
+</html>

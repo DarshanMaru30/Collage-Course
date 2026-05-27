@@ -1,0 +1,594 @@
+/*----------------------------------------------------------
+                        Default CSS
+------------------------------------------------------------*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.d-flex {
+    display: flex;
+  }
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.margin-x
+{
+  margin: 0px 15px;
+}
+
+
+  
+.space-between {
+     justify-content: space-between;
+ }
+  
+.align-center {
+    align-items: center;
+}
+.just-center
+{
+  justify-content: center;
+}
+  
+.text-center {
+    text-align: center;
+}
+ul{
+  list-style-type:none ;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ================ top-header css ================== */
+.top-hed
+{
+  padding: 15px 0px;
+  margin: 0px 15px;
+}
+.top-hed .t-info p .icon
+{
+  color: #01B3A7;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: 500;
+ 
+}
+.top-hed .t-info p
+{
+  font-size: 16px;
+  line-height: 1;
+  padding:3px  22px;
+}
+.top-hed .t-info p:first-child
+{
+  border-right: 1px solid black;
+  
+}
+
+.top-hed .t-info button
+{
+  padding: 12px 23px 10px ;
+  font-size: 16px;
+  min-width: 140px;
+  border: solid 3px #01B3A7 ;
+  margin-left: 65px;
+  transition: 0.5s;
+}
+.top-hed .t-info button:hover
+{
+  background-color: #50BA87;
+}
+
+/* ================ main-header css ================== */
+
+.main-hed{
+  background-color: #162E44;
+  color: white;
+  padding: 15px ;
+  
+}
+
+.main-manu li a
+{
+  font-size: 16px;
+  padding: 15px 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  z-index: 1;
+  transition: 0.5s;
+}
+.m-icon a{
+  margin-left: 30px;
+  font-size: 20px;
+  transition: 0.7s;
+
+}
+.m-icon a:hover{
+  color: #50BA87;
+
+}
+.main-manu li:hover a
+{
+  border-top: 4px solid #01B3A7;
+  background-color: rgba(255, 255, 255, 0.3);
+  
+}
+
+/* ================ slider css ================== */
+
+.slider .s-img
+{
+  width: 100%;
+  position: relative;
+ 
+
+}
+.slider .s-img img
+{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+
+}
+.slider .s-img .s-info
+{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin: 0px 15px;
+  color: white;
+}
+.slider .s-info h3
+{
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: .050em;
+  line-height: 2px;
+  font-family: "Montserrat", sans-serif, Arial, sans-serif;
+}
+.slider .s-info h2
+{
+  font-weight: 500;
+  font-size: 70px;
+  letter-spacing: .050em;
+  line-height: 2px;
+  font-family: "Montserrat", sans-serif, Arial, sans-serif;
+  margin-top: 67px;
+  font-weight: bold;
+}
+.slider .s-info h2 span
+{
+  font-weight: 100;
+}
+.slider .s-info button
+{
+  margin-top: 50px;
+  padding: 12px 23px 10px;
+  font-size: 16px;
+  min-width: 140px;
+  border: solid 3px white ;
+  background-color: transparent;
+  color: white;
+  margin-top: 67px;
+ 
+  transition: 0.5s;
+  
+}
+.s-info button:hover
+{
+  background-color: #50BA87;
+}
+
+/* ================ box categories css ================== */
+
+.box-cate
+{
+  /* position: relative;
+  top: -40px; */
+  background: rgba(0, 0, 0, 0.1);
+}
+.box-cate .m-box
+{
+  width: 100%;
+
+}
+.box-cate .m-box .box
+{
+  margin: 0px 15px;
+  width: 33.33%;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  transition: 0.7s;
+  position: relative;
+  top: -35px;
+
+}
+.box-cate .box::before
+{
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  opacity: 0.3;
+}
+.box-cate .box h2
+{
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  left: 25%;
+
+} 
+.box-cate .box img{
+  transition: 0.5s;
+  display: block;
+}
+.box-cate .box:hover img{
+  transform: scale(1.3);
+}
+.box-cate .box-info p
+{
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+
+}
+
+/* ================ Discover New Horizons css ================== */
+
+.discover{
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+}
+.discover .dis-main{
+  margin: 0px 15px;
+}
+.discover .dis-main .dis-info
+{
+  width: 50%;
+  
+  align-items: center;
+}
+.discover .dis-main img
+{
+  width: 100%;
+  height: auto ;
+  display: block;
+  
+}
+ .discover .dis-main .d-info
+{
+  margin-left: 80px;
+  margin-top: 40px;
+  
+  
+} 
+.dis-main .dis-info h2
+{
+  font-size: 36px;
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif, Arial, sans-serif;
+  
+}
+.dis-main .dis-info p
+{
+ display: block;
+ margin-top: 30px;
+}
+.dis-main .dis-info .btn1
+{
+  padding: 20px 50px 19px;
+  margin-right: 40px;
+  margin-top: 40px;
+  background-color: #01B3A7;
+  border: 0px;
+  font-size: 18px;
+  transition: 0.3s;
+
+}
+.dis-info .btn1:hover
+{
+  background-color: transparent;
+  border: 2px solid black;
+}
+.dis-main .dis-info .btn2
+{
+  padding: 20px 50px 19px;
+  font-size: 18px;
+  transition: 0.5;
+  border: 2px solid black;
+
+}
+.dis-info .btn2:hover
+{
+  background-color: #01B3A7;
+  border: 0px;
+}
+
+/* ================ our services css ================== */
+.our-ser
+{
+  margin-top: 80px;
+}
+.our-ser .our-hed
+{
+  text-align: center;
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif, Arial, sans-serif;  
+  margin-bottom: 28px;
+}
+.our-ser .our-sec
+{
+  margin-top: 32px;
+  flex-wrap: wrap ;
+  margin:0px 15px ;   
+}
+.our-ser .section
+{
+  width: 32%;
+  border: solid 8px #F4F4F4;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 40px 20px;
+  /* margin: 10px; */
+  
+}
+.our-ser .section .o-icon
+{
+  font-size: 35px;
+  margin-right: 18px;
+  color: #01B3A7;
+}
+.our-ser .section a{
+  font-size:25px;
+  color: black;
+  display: flex;
+  
+}
+.our-ser .section p{
+margin-left: 50px;
+text-align: left; 
+margin-top: 18px; 
+color: rgba(0, 0, 0, 0.5);
+}
+
+/* ================ Hot Tuors css ================== */
+
+.hot-tour h2
+{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.hot-tour .tour-box
+{
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.hot-tour .tour-box .hot-sec
+{
+  width: 50%;  
+} 
+.tour-box .hot-sec img
+{
+  width: 100%;
+  display: block;
+}
+.hot-tour .tour-box .hot-sec:last-child
+{
+  padding: 60px;
+
+} 
+.tour-box .hot-sec h3
+{
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+.tour-box .hot-sec h4
+{
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 16px;
+ 
+}
+.tour-box .hot-sec h4
+{ 
+  color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 16px;
+}
+.tour-box .hot-sec p
+{ 
+  color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+.tour-box .hot-sec .star
+{ 
+  margin-right: 10px;
+}
+.tour-box .hot-sec button
+{ 
+  padding: 17px 28px 15px;
+  background-color: transparent;
+  font-size: 18px;
+  transition: 0.5s;
+  border-color: black 1px solid;
+
+}
+.tour-box .hot-sec button:hover
+{
+  background-color: #01B3A7;
+  border-color: #01B3A7 
+}
+
+/* ================ Hot Tuors css ================== */
+
+.firs-inpre{
+  background-image:url(./image/f-inpre.jpeg) ;
+  width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.firs-inpre .f-info{
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.f-info h2{
+  font-size: 60px;
+}
+.f-info h3{
+  font-size: 55px;
+  font-weight: normal;
+}
+.f-info p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.f-info button{
+  padding: 14px 35px 15px;
+  background-color: #01B3A7;
+  font-size: 18px;
+  color: white;
+  border: 2px solid #01B3A7;
+  transition: 0.5s;
+
+}
+.f-info button:hover{
+  border: 2px solid white;
+  background-color: transparent;
+}
+/* ================ what people say css ================== */
+
+.psay img
+{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  
+}
+
+
+
+/* ================ FOOTER css ================== */
+
+.footer
+{
+  background-color: #162E44;
+  color: white;
+}
+.footer .f-sec
+{
+  width: 33.33%;
+  margin: 50px 0px;
+  
+
+}
+.footer .f-sec .f-icone
+{
+  color: #01B3A7;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer .f-sec h2
+{
+  font-weight: normal;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+.footer .f-sec p
+{
+  font-weight: normal;
+  font-size: 16px;
+  margin: 10px 0px;
+  width: 220px;
+}
+.footer .f-sec .f2-1,.f3-i
+{
+  color: #01B3A7;
+}
+.footer .f-sec .f2-2
+{
+  color: #506270;
+}
+
+.footer .f3 p
+{
+  margin: 5px 0px;
+}
+.footer .f3 button
+{
+  padding: 20px 33px 18px;
+  background-color: #01B3A7;
+  font-size: 16px;
+  border: 0px;
+  margin-top: 10px;
+}
+.footer .f3 button:hover
+{
+  background-color: #50BA87;
+}
+.b-foot
+{
+  background-color: #11263A;
+  color: rgba(255, 255, 255, 0.5);
+}
+.b-foot .b-i
+{
+  margin: 20px 10px;
+
+
+}
+.b-foot h2{
+  margin-right:150px;
+}
+
+.b-foot p
+{
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calcuation - 2</title>
+
+	<script type="text/javascript">
+		
+		function cal(ch)
+		{
+			var x = document.getElementById('no1').value;
+			var y = document.getElementById('no2').value;
+			var result;
+
+			switch(ch)
+			{
+				case 1:
+					result = parseInt(x) + parseInt(y);
+					break;
+				case 2:
+					result = parseInt(x) - parseInt(y);
+					break;
+				case 3:
+					result = parseInt(x) * parseInt(y);
+					break;
+				case 4:
+					result = parseInt(x) / parseInt(y);
+					break;
+			}
+			document.getElementById('ans').value = result;
+		}
+
+	</script>
+
+</head>
+<body>
+
+	No-1:- <input type="text" name="" id="no1"><br><br>
+	No-2:- <input type="text" name="" id="no2"><br><br>
+
+	<input type="button" value="Sum" name="" id="sum" onclick="cal(1)">
+	<input type="button" value="Sub" name="" id="sub" onclick="cal(2)">
+	<input type="button" value="Mul" name="" id="mul" onclick="cal(3)">
+	<input type="button" value="Div" name="" id="div" onclick="cal(4)">
+
+	<br><br>Ans:- <input type="text" readonly name="" id="ans">
+
+</body>
+</html>

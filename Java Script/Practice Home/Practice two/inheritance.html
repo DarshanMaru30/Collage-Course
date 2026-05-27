@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Practice</title>
+
+    <script>
+
+        class first 
+        {
+            get()
+            {
+                document.write(" Darshan");
+            }
+            set()
+            {
+                document.write(" Welcome");
+            }
+            constructor()
+            {
+                document.write("Hello");
+            }
+        }
+
+        class two extends first
+        {
+            data()
+            {
+                document.write("  Good Morning");
+            }
+        }
+
+        var f = new two();
+        f.get();
+        f.set();
+        f.data();
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
