@@ -1,0 +1,191 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-size: 18px;
+    font-family: cambria;
+}
+.top_info
+{
+    background-color: #ff8200;
+    color: white;
+}
+.container
+{
+    width: 1200px;
+    background-color: #19232b;
+    padding: 20px;
+    margin: auto;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+.top_info li a
+{
+    color: white;
+    padding: 7px 20px;
+}
+.social li a
+{
+    padding-left: 0px;
+    padding-right: 17px;
+}
+.container2
+{
+    width: 1200px;
+    margin: auto;
+}
+.main_menu li a
+{
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 30px 0;
+    transition: .5s;
+}
+.main_menu li
+{
+    padding: 0px 15px;
+    position: relative;
+}
+.main_menu li button
+{
+    border: none;
+}
+.main_menu li button a
+{
+    color: white;
+    padding: 20px 35px;
+    background-color: #ff8200;
+}
+.angle
+{
+    position: absolute;
+    top: 51%;
+    left: 64px;
+}
+.angle2
+{
+    position: absolute;
+    top: 51%;
+    left: 83px;
+}
+.angle3
+{
+    position: absolute;
+    top: 51%;
+    left: 88px;
+}
+.angle4
+{
+    position: absolute;
+    top: 51%;
+    left: 52px;
+}
+.sub_menu
+{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 200px;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}   
+.sub_menu li a
+{
+    padding: 10px;
+    transition: .5s;
+}
+.sub_menu li
+{
+    padding: 0px 0px;
+}
+.peta_menu
+{
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    width: 250px;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.top_info li i
+{
+    transition: .5s;
+}
+.main_menu li .fix
+{
+    color: #ff8200;
+}
+.top_info li .logo
+{
+    color: #ff8200;
+}
+.main_menu li:hover .sub_menu
+{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+}
+.sub_menu li:hover .peta_menu
+{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+}
+.main_menu li:hover > a 
+{
+    color: #ff8200;
+}
+.top_info li:hover i
+{
+    color: #ff8200;
+}
+.sub_menu li:hover > a
+{
+    padding-left: 25px;
+} 
+.sub_menu li i
+{
+    padding-right: 5px;
+    visibility: hidden;
+    position: fix;
+    transition: .1s;
+    color: #ff8200;
+    font-size: 15px;
+}
+.sub_menu li:hover i
+{
+    /* padding-right: 8px; */
+    visibility: visible;
+}
+.sub_menu li div
+{
+    position: absolute;
+    position: fixed;
+    left: 33%;
+}
+.main_menu li button a:hover 
+{
+    background-color: #19232b;
+}

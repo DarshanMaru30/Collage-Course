@@ -1,0 +1,170 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-size: 17px;
+    font-family: calibri;
+}
+.top_info
+{
+    background-color: #9d5cd8;
+    padding: 15px;
+}
+.container
+{
+    width: 1200px;
+    margin: auto;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+nav
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+.top_info li a
+{
+    color: white;
+}
+.top_info li
+{
+    padding: 0px 20px;
+}
+.top_info li i
+{
+    margin-right: 5px;
+}
+.social li
+{
+    padding: 0px 10px;
+}
+.main_menu li
+{
+    padding: 25px 35px;
+    position: relative;
+}
+.main_menu li a
+{
+    color: black;
+}
+.sub_menu
+{
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 250px;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.sub_menu li
+{
+    padding: 15px;
+    padding-left: 25px;
+}
+.sub_menu li a
+{
+    transition: .5s;
+}
+.peta_menu
+{
+    position: absolute;
+    top: 120%;
+    left: 100%;
+    background-color: White;
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.angle
+{
+    position: absolute;
+    top: 37px;
+    left: 80px;
+}
+.angle1
+{
+    position: absolute;
+    top: 37px;
+    left: 89px;
+}
+.angle2
+{
+    position: absolute;
+    top: 37px;
+    left: 78px;
+}
+.angle3
+{
+    position: absolute;
+    top: 37px;
+    left: 69px;
+}
+.angle4
+{
+    position: absolute;
+    top: 53%;
+    left: 90px;
+}
+.phone
+{
+    margin-right: 10px;
+    color: #9d5cd8;
+}
+.no li a
+{
+    color: black;
+    transition: .5s;
+}
+.social li a
+{
+    transition: .5s;
+}
+.main_menu li:hover .sub_menu
+{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+}
+.main_menu li:hover > a
+{
+    color: #9d5cd8;
+}
+.sub_menu li:hover .peta_menu
+{
+    position: absolute;
+    top: 30%;
+    visibility: visible;
+    opacity: 1;
+}
+.sub_menu li:hover > a
+{
+    padding: 20px;
+    color: #9d5cd8;
+}
+.no li:hover a
+{
+    color: #9d5cd8;
+}
+.social li:hover a
+{
+    color: black;
+}

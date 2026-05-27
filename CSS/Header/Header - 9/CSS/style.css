@@ -1,0 +1,209 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: calibri;
+    font-size: 17px;
+}
+.top_info
+{
+    background-color: #08bce9;
+    padding: 10px;
+    color: white;
+}
+.container
+{
+    width: 1200px;
+    margin: auto;
+}
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+.top_info li a
+{
+    color: white;
+}
+.top_info li
+{
+    padding: 5px 20px;
+}
+.social li 
+{
+    padding: 5px 10px;
+}
+.top_info i
+{
+    margin-right: 7px;
+}
+nav
+{
+    /* position: fixed; */
+    /* margin: a    uto; */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.main_menu li a
+{
+    color: white;
+    padding: 20px 5px;
+}
+.main_menu li
+{
+    padding: 20px 20px;
+    position: relative;
+}
+.sub_menu
+{
+    background-color: #08bce9;
+    position: absolute;
+    top: 150%;
+    width: 250px;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: .7s;
+}
+.sub_menu li
+{
+    padding: 15px;
+}
+.sub_menu li a
+{
+    transition: .5s;
+}
+.peta_menu
+{
+    background-color: #08bce9;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .7s;
+}
+.angle
+{
+    position: absolute;
+    top: 52%;
+    left: 68px;
+}
+.angle2
+{
+    position: absolute;
+    top: 52%;
+    left: 90px;
+}
+.angle3
+{
+    position: absolute;
+    top: 52%;
+    left: 83px;
+}
+.angle4
+{
+    position: absolute;
+    top: 52%;
+    left: 85px;
+}
+.angle5
+{
+    position: absolute;
+    top: 52%;
+    left: 57px;
+}
+.angle6
+{
+    position: absolute;
+    top: 52%;
+    left: 62px;
+}
+.angle7
+{
+    position: absolute;
+    top: 52%;
+    left: 66px;
+}
+.angle8
+{
+    position: absolute;
+    top: 52%;
+    left: 90%;
+}
+.main_menu span
+{
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.main_menu div
+{
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    left: 24%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.sub_menu li .sub
+{
+    width: 4px;
+    height: 10px;
+    position: absolute;
+}
+.main_menu li:hover .sub_menu
+{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+}
+.sub_menu li:hover .peta_menu
+{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 0%;
+}
+.sub_menu li:hover > a
+{
+    padding: 23px;
+}
+.sub_menu li:hover > span
+{
+    visibility: visible;
+    opacity: 1;
+    width: 15px;
+}
+.main_menu li:hover div
+{
+    visibility: visible;
+    opacity: 1;
+    width: 60px;
+}
+.social li a:hover i 
+{
+    padding-bottom: 10px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+    <!-- http://bestjquery.com/tutorial/testimonial/demo56/ -->
+
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="CSS/animate.min.css">
+
+    <!-- <link rel="stylesheet" href="CSS/all.min.css"> -->
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+    <div class="owl-carousel owl-theme" id="slider">
+        <div class="item">
+            <div class="content">
+                <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi blanditiis iusto eveniet odio est perferendis at quisquam repellat, ullam nihil ab cumque cum, obcaecati culpa doloribus minus eius nobis? Autem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, unde dolorum.
+                </p>
+            </div>
+            <div class="profile">
+                <div class="pic">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <h3 class="title">
+                    Williamson
+                    <span class="post">Web developer</span>
+                </h3>
+            </div>
+        </div>
+        <div class="item">
+            <div class="content">
+                <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi blanditiis iusto eveniet odio est perferendis at quisquam repellat, ullam nihil ab cumque cum, obcaecati culpa doloribus minus eius nobis? Autem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, unde dolorum.
+                </p>
+            </div>
+            <div class="profile">
+                <div class="pic">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <h3 class="title">
+                    Williamson
+                    <span class="post">Web developer</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+    <script src="JS/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                margin: 20,
+            });
+        });
+    </script>
+
+</body>
+
+</html>

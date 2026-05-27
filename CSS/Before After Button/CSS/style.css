@@ -1,0 +1,1005 @@
+body
+{
+    margin: 100px 363px;
+    font-family: calibri;
+}
+h1
+{
+    margin-bottom: 10px;
+}
+.btn
+{
+    border: none;
+    padding: 8px 23px;
+    margin-left: 7px;
+    margin-top: 13px;
+    background-color: #E1E1E1;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+p
+{
+    color: #737373;
+    font-size: 15px;
+    z-index: 1;
+    position: relative;
+    transition: .5s;
+}
+.btn:hover p
+{
+    color: white;
+}
+
+/* Button - 1 */
+
+.btn1::before
+{
+    width: 100%;
+    height: 100%;
+    background-color: #2098D1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    transition: .5s;
+    opacity: 0;
+}
+.btn1:hover::before
+{
+    opacity: 1;
+}
+
+/* Button - 2 */
+
+.btn2::after
+{
+    width: 100%;
+    height: 100%;
+    background-color: #2098D1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    opacity: 0;
+    transition: .5s;
+}
+.btn2:hover::after
+{
+    opacity: 1;
+}
+
+/* Effect - 3 */
+
+.btn3::before
+{
+    width: 0%;
+    height: 100%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.btn3:hover::before
+{
+    width: 100%;
+}
+
+/* Effect - 4 */
+
+.btn4::after
+{
+    width: 0%;
+    height: 100%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+.btn4:hover::after
+{
+    width: 100%;
+}
+
+/* Effect - 5 */
+
+.btn5::after
+{
+    width: 100%;
+    height: 0%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+.btn5:hover::after
+{
+    height: 100%;
+}
+
+/* Effect - 6 */
+
+.btn6::after
+{
+    width: 100%;
+    height: 0%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+.btn6:hover::after
+{
+    height: 100%;
+}
+
+/* Effect - 7 */
+
+.btn7::after
+{
+    width: 0%;
+    height: 100%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.btn7:hover::after
+{
+    width: 100%;
+    transition-timing-function: cubic-bezier(.95,1.73,.83,.18);
+}
+
+/* Effect - 8 */
+
+.btn8::after
+{
+    width: 0%;
+    height: 100%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+.btn8:hover::after
+{
+    width: 100%;
+    transition-timing-function: cubic-bezier(.95,1.73,.83,.18);
+}
+
+/* Effect - 9 */
+
+.btn9::after
+{
+    width: 100%;
+    height: 0%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+.btn9:hover::after
+{
+    height: 100%;
+    transition-timing-function: cubic-bezier(.95,1.73,.83,.18);
+}
+
+/* Effect - 10 */
+
+.btn10::after
+{
+    width: 100%;
+    height: 0%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: .5s;
+}
+.btn10:hover::after
+{
+    height: 100%;
+    transition-timing-function: cubic-bezier(.95,1.73,.83,.18);
+}
+
+/* Effect - 11 */
+
+.btn11::before
+{
+    width: 100%;
+    height: 100%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    border-radius: 100%;
+    transition: .5s;
+}
+.btn11:hover::before
+{
+    transform: scale(2);
+}
+
+/* Effect - 12 */
+
+.btn12
+{
+    background-color: #2098D1;
+}
+.btn12::before
+{
+    width: 100%;
+    height: 100%;
+    background-color: #E1E1E1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(2);
+    border-radius: 100%;
+    transition: .5s;
+}
+.btn12:hover::before
+{
+    transform: scale(0);
+}
+
+/* Effect - 13 */
+
+.btn13
+{
+    background-color: #2098D1;
+}
+.btn13::after
+{
+    width: 100%;
+    height: 100%;
+    background-color: #E1E1E1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(2);
+    transition: .5s;
+}
+.btn13:hover::after
+{
+    transform: scale(0);
+}
+
+/* Effect - 14 */
+
+.btn14::before
+{
+    width: 100%;
+    height: 100%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    transform: scale(0);
+}
+.btn14:hover::before
+{
+    transform: scale(2);
+}
+
+/* Effect - 15 */
+
+.btn15::after
+{
+    width: 0%;
+    height: 100%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.btn15::before
+{
+    width: 0%;
+    height: 100%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+.btn15:hover::before
+{
+    width: 50%;
+}
+.btn15:hover::after
+{
+    width: 50%;
+}
+
+/* Effect - 16 */
+
+.btn16::before
+{
+    width: 0%;
+    height: 100%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transition: .5s;
+}
+.btn16::after
+{
+    width: 0%;
+    height: 100%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transition: .5s;
+}
+.btn16:hover::after
+{
+    width: 50%;
+}
+.btn16:hover::before
+{
+    width: 50%;
+}
+
+/* Effect - 17 */
+
+.btn17::after
+{
+    width: 100%;
+    height: 0%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.btn17::before
+{
+    width: 100%;
+    height: 0%;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: .5s;
+}
+.btn17:hover::after
+{
+    height: 50%;
+}
+.btn17:hover::before
+{
+    height: 50%;
+}
+
+/* Effect - 18 */
+
+.btn18::after
+{
+    width: 100%;
+    height: 0;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transition: .5s;
+}
+.btn18::before
+{
+    width: 100%;
+    height: 0;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    transition: .5s;
+}
+.btn18:hover::after
+{
+    height: 50%;
+}
+.btn18:hover::before
+{
+    height: 50%;
+}
+
+.btn:hover .color
+{
+    color: #737373;
+}
+
+/* Effect - 19 */
+
+.btn19::after
+{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 5px solid #2098D1;
+    outline-offset: -5px;
+    opacity: 0;
+    transition: .5s;
+}
+.btn19:hover::after
+{
+    opacity: 1;
+}
+
+/* Effect - 20 */
+
+.btn20::after
+{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 5px solid #E1E1E1;
+    outline-offset: -5px;
+    transition: .5s;
+}
+.btn20:hover::after
+{
+    background-color: white;
+}
+
+/* Effect - 21 */
+
+.btn21::after
+{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 5px solid transparent;
+    outline-offset: -10px;
+    transition: .5s;
+}
+.btn21:hover::after
+{
+    outline-color: white;
+}
+
+/* Effect - 22 */
+
+.btn22
+{
+    overflow: visible;
+}
+.btn22::after
+{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 5px solid #E1E1E1;
+    outline-offset: -10px;
+}
+.btn22:hover::after
+{
+    outline-offset: 10px;
+    transition: .9s;
+    outline-color: transparent;
+}
+
+/* Effect - 23 */
+
+.btn23
+{
+    overflow: visible;
+}
+.btn23::after
+{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 5px solid transparent;
+    outline-offset: 10px;
+}
+.btn23:hover::after
+{
+    outline-offset: -10px;
+    transition: .9s;
+    outline-color: #E1E1E1;
+}
+
+/* Effect - 24 */
+
+.btn24
+{
+    overflow: visible;
+}
+.btn24::after
+{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 5px solid #E1E1E1;
+    transition: .5s;
+    outline-offset: -10px;
+}
+.btn24:hover::after
+{
+    outline-offset: 3px;
+}
+
+/* Effect - 25 */
+
+.btn25
+{
+    overflow: visible;
+}
+.btn25::after
+{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 5px solid transparent;
+    outline-offset: 15px;
+}
+.btn25:hover::after
+{
+    transition: .5s;
+    outline-offset: 3px;
+    outline-color: #E1E1E1;
+}
+
+/* Effect - 26 */
+
+.btn26
+{
+    transition: .5s;
+}
+.btn26:hover
+{
+    border-radius: 20px;
+}
+
+/* Effect - 27 */
+
+.btn27::after
+{
+    width: 0%;
+    height: 5px;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+.btn27:hover::after
+{
+    width: 100%;
+}
+
+/* Effect - 28 */
+
+.btn28::before
+{
+    width: 0%;
+    height: 5px;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: .5s;
+}
+.btn28::after
+{
+    width: 0%;
+    height: 5px;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: .5s;
+}
+.btn28:hover::before
+{
+    width: 50%;
+}
+.btn28:hover::after
+{
+    width: 50%;
+}
+
+/* Effect - 29 */
+
+.btn29::after
+{
+    width: 0%;
+    height: 5px;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: .5s;   
+}
+.btn29:hover::after
+{
+    width: 100%;
+}
+
+/* Effect - 30 */
+
+.btn30::after
+{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: px solid #2098D1;
+    outline-offset: 0px;
+    transition: .5s;
+}
+.btn30:hover::after
+{
+    outline-offset: -5px;
+    outline: 5px solid #2098D1;
+}
+
+/* Effect - 31 */
+
+.btn31::after
+{
+    width: 1000%;
+    height: 0px;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+.btn31:hover::after
+{
+    height: 5px;
+}
+
+/* Effect - 32 */
+
+.btn32::after
+{
+    width: 100%;
+    height: 0;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.btn32:hover::after
+{
+    height: 5px;
+}
+
+/* Effect - 33 */
+
+.btn33::after
+{
+    width: 0;
+    height: 4px;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.btn33:hover::after
+{
+    width: 100%;
+}
+
+/* Effect - 34 */
+
+.btn34::after
+{
+    width: 0%;
+    height: 4px;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: .5s;
+}
+.btn34::before
+{
+    width: 0;
+    height: 4px;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transition: .5s;
+}
+.btn34:hover::after
+{
+    width: 50%;
+}
+.btn34:hover::before
+{
+    width: 50%;
+}
+
+/* Effect - 35 */
+
+.btn35::after
+{
+    width: 0;
+    height: 4px;
+    background-color: #2098D1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+.btn35:hover::after
+{
+    width: 100%;
+}
+
+/* Effect - 36 */
+
+.btn36
+{
+    overflow: visible;
+    z-index: 1;
+    position: relative;
+}
+.btn36::after
+{
+    width: 40px;
+    height: 40px;
+    background-color: #E1E1E1;
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+.btn36:hover::after
+{
+    top: -3%;
+}
+
+/* Effect - 37 */
+
+.btn37
+{
+    overflow: visible;
+}
+.btn37::after
+{
+    width: 40px;
+    height: 40px;
+    background-color: #E1E1E1;
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    rotate: 45deg;
+    transition: .5s;
+}
+.btn37:hover::after
+{
+    right: -3%;
+}
+
+/* Effect - 38 */
+
+.btn38
+{
+    overflow: visible;
+}
+.btn38::after
+{
+    width: 40px;
+    height: 40px;
+    background-color: #E1E1E1;
+    content: '';
+    position: absolute;
+    left: 35%;
+    bottom: 15%;
+    rotate: 45deg;
+    transition: .5s;
+}
+.btn38:hover::after
+{
+    bottom: -4%;
+}
+
+/* Effect - 39 */
+
+.btn39
+{
+    overflow: visible;
+}
+.btn39::after
+{
+    width: 40px;
+    height: 40px;
+    background-color: #E1E1E1;
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 9%;
+    rotate: 45deg;
+    transition: .5s;
+}
+.btn39:hover::after
+{
+    left: -3%;
+}
+
+/* Effect - 40 */
+
+.btn40
+{
+    overflow: visible;
+    transition: .4s;
+}
+.btn40::before
+{
+    width: 40px;
+    height: 40px;
+    background-color: #E1E1E1;
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 35%; 
+    rotate: 45deg;
+    transition: .4s;
+}
+.btn40:hover::before
+{
+    top: -3px;
+}
+.btn40:hover
+{
+    transform: translateY(20px);
+}
+
+/* Effect - 41 */
+
+.btn41
+{
+    transition: .5s;
+    overflow: visible;
+}
+.btn41::after
+{
+    width: 40px;
+    height: 40px;
+    background-color: #E1E1E1;
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    rotate: 45deg;
+    transition: .5s;
+}
+.btn41:hover
+{
+    transform: translateX(-20px);
+}
+.btn41:hover::after
+{
+    right: -3%;
+}
+
+/* Effect - 42 */
+
+.btn42
+{
+    transition: .5s;
+    overflow: visible;
+}
+.btn42::after
+{
+    width: 40px;
+    height: 40px;
+    background-color: #E1E1E1;
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 38%;
+    rotate: 45deg;
+    transition: .5s;
+}
+.btn42:hover
+{
+    transform: translateY(-15px);
+}
+.btn42:hover::after
+{
+    bottom: -4%;
+}
+
+/* Effect - 43 */
+
+.btn43
+{
+    transition: .5s;
+    overflow: visible;
+}
+.btn43::after
+{
+    width: 40px;
+    height: 40px;
+    background-color: #E1E1E1;
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    rotate: 45deg;
+    transition: .5s;
+}
+.btn43:hover
+{
+    transform: translateX(20px);
+}
+.btn43:hover::after
+{
+    left: -3%;
+}

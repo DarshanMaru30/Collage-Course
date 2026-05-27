@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: 600;
+}
+.top_info
+{
+    background-color: #41332c;
+    padding: 13px;
+}
+.container
+{
+    width: 1200px;
+    margin: auto;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+.angle
+{
+    margin-right: 7px;
+}
+.top_info li
+{
+    color: white;
+}
+.main_menu li
+{
+    padding: 40px 0;
+    position: relative;
+}
+.main_menu li a
+{
+    color: black;
+    padding: 17px;
+    transition: 0.4s;
+}
+.main_menu li i
+{
+    position: absolute;
+    top: 53px;
+    left: 65px;
+}
+.main_menu li .fix
+{
+    color: #eaa234;
+}
+.btn li button
+{
+    padding: 15px 25px;
+    font-size: 19px;
+    color: white;
+    border: none;
+    border-radius: 85px;
+    background-color: #eaa234;
+    transition: 0.4s;
+}
+.sub_menu
+{
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.sub_menu li 
+{
+    padding: 10px;
+    padding-left: 5px;
+}
+.top_info li:hover 
+{
+    color: #eaa234;
+    transition: 0.4s;
+}
+.main_menu li:hover .sub_menu
+{
+    visibility: visible;
+    opacity: 1;
+}
+.btn li:hover button
+{
+    background-color: #41332c;
+}
+.main_menu li:hover > a
+{
+    color: #eaa234;
+}

@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: calibri;
+    font-size: 17px;
+}
+.top_info
+{
+    padding: 20px;
+    background-color: #0D232E;
+    color: white;
+}
+.container
+{
+    width: 1250px;
+    margin: auto;
+}
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul
+{
+    list-style: none;
+}
+.social li a
+{
+    padding: 8px;
+    color: #63BE61;
+    transition: .5s;
+}
+.social ul .pad
+{
+    padding-right: 60px;
+}
+.number li i
+{
+    padding: 5px;
+    color: #FF7129;
+}
+.main_menu li
+{
+    padding: 35px 10px;
+    position: relative;
+}
+.main_menu li a
+{
+    padding: 15px 5px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.main_menu li .fix
+{
+    color: #63BE61;
+}
+.btn li a
+{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 5px 15px;
+}
+button
+{
+    border-radius: 10px;
+    transition: .5s;
+    border: none;
+    background-color: #FF7129;
+}
+.btn li button .top
+{
+    padding: 15px 35px;
+    color: white;   
+    display: block;
+}
+.btn ul .padd
+{
+    padding-right: 80px;
+}
+.sub_menu
+{
+    position: absolute;
+    top: 130%;
+    left: 0;
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.sub_menu li
+{
+    padding: 15px;
+    transition: .5s;
+}
+.sub_menu li span
+{
+    width: 0px;
+    height: 2px;
+    background-color: #63BE61cf;
+    position: absolute;
+    top: 50%;
+    transition: .5s;
+}
+.main_menu div
+{
+    width: 85%;
+    height: 1px;
+    background-color: grey;
+    position: absolute;
+    top: 100%;
+    font-weight: lighter;
+    transition: .5s;
+}
+.main_menu li:hover > div
+{
+    background-color: #63BE61;
+}
+.sub_menu li:hover span
+{
+    position: absolute;
+    left: 10%;
+    width: 13px;
+}
+.sub_menu li:hover a
+{
+    padding: 30px;
+}
+.main_menu li:hover > a
+{
+    color: #63BE61;
+}
+.main_menu li:hover .sub_menu
+{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+}
+.btn button:hover 
+{
+    background-color: #63BE61;
+}
+.social li a:hover 
+{
+    color: blue;
+}

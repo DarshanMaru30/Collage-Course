@@ -1,0 +1,312 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v25-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v25-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v25-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v25-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v25-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v28-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/raleway-v28-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/raleway-v28-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Default CSS    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |                                 
+----------------------------------------------------------------------------------------------------------------------------------------------*/
+* , *::after , *::before 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --body_color: #666666;
+    --green: #41CD52;
+    --white: #fff;
+    --black: #333333;
+    --Montserrat: 'Montserrat';
+    --Raleway: 'Raleway';
+    --sec_color: #F9F9F9;
+}
+body 
+{
+    font-family: var(--Raleway);
+    color: var(--body_color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , .head_fonts
+{
+    font-family: var(--Montserrat);
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+.flex
+{
+    display: flex;
+}
+.space_between
+{
+    justify-content: space-between;
+}
+.justi_content
+{
+    justify-content: center;
+}
+.align_item
+{
+    align-items: center;
+}
+.text_align
+{
+    text-align: center;
+}
+.container
+{
+    width: 1170px;
+    margin: auto;
+}
+.space
+{
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+a
+{
+    text-decoration: none;
+    display: block;
+}
+ul , ol
+{
+    list-style: none;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------------------  Header CSS ------------------------------------- */
+.header
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4) ) , url(../Images/asset\ 19.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header .container
+{
+    padding: 10px;
+}
+.header .set
+{
+    background-color: var(--white);
+    margin-top: 20px;
+    align-items: center;
+    padding: 8px 5px;
+    padding-top: 13px;
+    border-radius: 5px;
+}
+.logo img
+{
+    width: 150px;
+}
+.main_menu li 
+{
+    align-items: center;
+}
+.main_menu li a
+{
+    color: var(--body_color);
+    font-size: 12px;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 5px;
+    transition: .5s;
+}
+.main_menu li:hover a
+{
+    color: var(--green);
+}
+.content
+{
+    color: var(--white);
+    margin-top: 140px;
+}
+.content p
+{
+    margin-top: 5px;
+}
+ .head_btn  
+{
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--Montserrat);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-weight: 400;
+    margin-top: 23px;
+    cursor: pointer;
+    transition: .3s;
+}
+.head_btn:hover
+{
+    box-shadow: 2px 2px 10px var(--green);
+}
+.content span
+{
+    background-color: var(--white);
+    height: 60px;
+    width: 60px ;
+    border-radius: 50px;
+    color: var(--green);
+    position: absolute;
+    top: 48%;
+    right: 22%;
+    text-align: center;
+    align-items: center;
+}
+.content i
+{
+    margin-top: 30px;
+    margin-left: 3px;
+}
+
+/* ------------------------------------------ Second Section ------------------------------------------ */
+
+.second_sec .container .set2
+{
+    width: 100%;
+}
+.second_sec .laptop img
+{
+    width: 550px;
+}
+.second_sec h1
+{
+    color: var(--black);
+}
+.second_sec .title
+{
+    color: var(--green);
+    font-family: var(--Montserrat);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* ------------------------------------------ Third Section ------------------------------------------ */
+
+.third_sec
+{
+    background-color: var(--sec_color);
+}
+.third_sec .container .set3
+{
+    width: 100%;
+}
+.third_sec .laptop img
+{
+    width: 550px;
+}
+.third_sec h1
+{
+    color: var(--black);
+}
+.third_sec .title
+{
+    color: var(--green);
+    font-family: var(--Montserrat);
+    font-size: 18px;
+    text-transform: uppercase;
+}

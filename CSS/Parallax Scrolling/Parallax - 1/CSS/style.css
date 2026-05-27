@@ -1,0 +1,121 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	font-family: calibri;
+}
+.first_sec
+{
+	background-image: linear-gradient(rgba(195, 195, 195, 0.5) , rgba(195, 195, 195, 0.5) ) , url(../image/1.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+.first_sec button
+{
+	font-size: 25px;
+	border: 0;
+	width: 350px;
+	background-image: linear-gradient(rgba(195, 195, 195, 0.5) , rgba(195, 195, 195, 0.5) );
+	background-color: black;
+	color: white;
+	letter-spacing: 10px;
+	word-spacing: 10px;
+	text-align: center;
+	margin: 51vh;
+	padding: 18px;
+}
+.second_sec h2
+{
+	text-align: center;
+	margin-bottom: 23px;
+	font-weight: normal;
+	letter-spacing: 5px;
+}
+.second_sec
+{
+	padding: 70px;
+}
+.second_sec p
+{
+	text-align: justify;
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: normal;
+}
+.third_sec
+{
+	background-image:  linear-gradient(rgba(195, 195, 195, 0.5) , rgba(195, 195, 195, 0.5) ) , url(../image/2.jpg);
+	background-attachment: fixed;
+	height: 46vh;
+	background-size: cover;
+	background-position: center;
+}
+.third_sec h2
+{
+	color: white;
+	font-size: 30px;
+	font-weight: normal;
+	letter-spacing: 7px;
+	text-align: center;
+	padding: 22vh;
+}
+.forth_sec p
+{
+	background-color: #282E34;
+	color: #ddd;
+	padding: 70px;
+	font-size: 15px;
+	text-align: justify;
+}
+.fifth_sec
+{
+	background-image:  linear-gradient(rgba(195, 195, 195, 0.5) , rgba(195, 195, 195, 0.5) ) , url(../image/3.jpg);
+	height: 43vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.fifth_sec p
+{
+	color: white;
+	font-size: 25px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	word-spacing: 5px;
+	text-align: center;
+	padding: 21vh;
+}
+.sixth_sec p
+{
+	background-color: #282E34;
+	color: #ddd;
+	padding: 70px;
+	font-size: 15px;
+	text-align: justify;
+}
+.sevanth_sec
+{
+	background-image:   linear-gradient(rgba(195, 195, 195, 0.5) , rgba(195, 195, 195, 0.5) ) , url(../image/1.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.sevanth_sec button
+{
+	font-size: 25px;
+	border: 0;
+	background-image: linear-gradient(rgba(195, 195, 195, 0.5) , rgba(195, 195, 195, 0.5) );
+	background-color: black;
+	color: white;
+	letter-spacing: 5px;
+	text-align: center;
+	margin-top: 48vh;
+	margin-left: 60vh;
+	padding: 18px;
+}

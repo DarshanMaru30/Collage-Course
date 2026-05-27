@@ -1,0 +1,152 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Lucida Sans;
+}
+/* #slider
+{
+    width: 900px;
+    height: 150px;
+    background-color: #ECA842;
+    margin: auto;
+    margin-top: 60px;
+}
+#slider .owl-stage-outer
+{
+    overflow: visible;
+}
+#slider p
+{
+    color: white;
+    background-color: #ECA842;
+    padding: 30px;
+    margin: 25px 25px;
+    position: relative;
+    border-radius: 15px;
+    font-size: 20px;
+}
+p::before
+{
+    height: 60px;
+    width: 60px;
+    background-color: #ECA842;
+    content: '';
+    position: absolute;
+    bottom: -5%;
+    left: 45%;
+    rotate: 45deg;
+}
+#slider .angle1
+{
+    background-color: #ECA842;
+    color: white;
+    padding: 18px 7px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+    top: -13%;
+    left: 2%;
+}
+#slider .angle2
+{
+    background-color: #ECA842;
+    color: white;
+    padding: 18px 7px;
+    border-radius: 8px;
+    position: absolute;
+    top: 91%;
+    left: 93%;
+} */
+.item
+{
+    margin: 0 200px;
+}
+.item .content
+{
+    margin: 50px 0 50px 0;
+    position: relative;
+}
+.item .content::after
+{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-top: 20px sollid #dca842;
+    border-left: 20px sollid transparent;
+    border-left: 20px sollid transparent;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+}
+.item .description
+{
+    padding: 25px 35px;
+    margin: 0;
+    background-color: #dca842;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+.item .description::before,
+.item .description::after
+{
+    font-family: "Font  Awesome 5 free"; font-weight: 900;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 8px;
+    text-align: center;
+    background: #dca842;
+    position: absolute;
+}
+.item .description::before
+{
+    /* content: "<i class="fa-solid fa-quote-left fa-2xl"></i>; */
+    content: "\f10d";
+    top: -18px;
+    left: 25px;
+}
+.item .profile
+{
+    display: table;
+    padding: 15px;
+    border: 1px solid #dca842;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.item .pic
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #dca842;
+    float: left;
+    overflow: hidden;
+}
+.item .title
+{
+    display: inline-block;
+    margin: 0 0 0 30px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #dca842;
+    position: relative;
+    top: 22px;
+}
+.item .post
+{
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+    margin-top: 10px;
+}

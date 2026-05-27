@@ -1,0 +1,150 @@
+    *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: cambria;
+    font-size: 1rem;
+    font-size: 18px;
+}
+.top_info
+{
+    background-color: #253142;
+    color: white;
+    padding: 15px;
+}
+.containar
+{
+    width: 1250px;
+    margin: auto;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+.top_info li a
+{
+    color: white;
+}
+.top_info li
+{
+    padding: 0px 15px;
+}
+.main_menu li
+{
+    position: relative;
+    padding: 30px 6px;
+    transition: 0.4s;
+}
+.main_menu li a
+{
+    color: black;
+    display: block;
+    padding: 10px 15px;
+}
+nav button
+{
+    padding: 20px 25px;
+    border-radius: 7px;
+    background-color: #FFC107;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+.sub_menu
+{
+    position: absolute;
+    top: 130%;
+    width: 250px;
+    background-color: white;
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+.sub_menu li
+{
+    padding: 10px;
+}
+.sub_menu li a
+{
+    padding: 3px 9px 3px 0px;
+}
+.peta_menu
+{
+    background-color: white;
+    position: absolute;
+    left: 130%;
+    top: 0%;
+    transition: 0.5s;
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+}
+.main_menu li span
+{
+    width: 0px;
+    height: 3px;
+    background-color: #FFC107;
+    transition: 0.3s;
+    position: absolute;
+}
+.main_menu li:hover > a
+{
+    background-color: #FFC107;
+    color: white;
+    border-radius: 85px;
+}
+.main_menu li:hover .sub_menu
+{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+}
+.sub_menu li:hover .peta_menu
+{
+    visibility: visible;
+    position: absolute;
+    left: 100%; 
+    opacity: 1;
+}
+.sub_menu li .line
+{
+    width: 45px;
+}
+.sub_menu li i
+{
+    margin-left: 115px;
+}
+.main_menu li .fix
+{
+    background-color: #FFC107;
+    border-radius: 85px;
+    color: white;
+}
+.sub_menu li:hover a
+{
+    background-color: white;
+    color: black;
+}
+.sub_menu li:hover > span
+{
+    width: 45px;
+}
+nav a button:hover
+{
+    background-color: blue;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Navigation</title>
+
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="owl-carousel owl-theme">
+            <div data-hash="a1"> <img src="Image/1.jpg" alt=""> </div>
+            <div data-hash="a2"> <img src="Image/2.jpg" alt=""> </div>
+            <div data-hash="a3"> <img src="Image/3.jpg" alt=""> </div>
+            <div data-hash="a4"> <img src="Image/4.jpg" alt=""> </div>
+            <div data-hash="a5"> <img src="Image/5.jpg" alt=""> </div>
+            <div data-hash="a6"> <img src="Image/6.jpg" alt=""> </div>
+            <div data-hash="a7"> <img src="Image/7.jpg" alt=""> </div>
+        </div>
+    </div>
+
+    <center class="slider">
+        <a href="#a1" class="active"><img src="Image/1.jpg" alt=""></a>
+        <a href="#a2"><img src="Image/2.jpg" alt=""></a>
+        <a href="#a3"><img src="Image/3.jpg" alt=""></a>
+        <a href="#a4"><img src="Image/4.jpg" alt=""></a>
+        <a href="#a5"><img src="Image/5.jpg" alt=""></a>
+        <a href="#a6"><img src="Image/6.jpg" alt=""></a>
+        <a href="#a7"><img src="Image/7.jpg" alt=""></a>
+    </center>
+
+    <script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+    <script src="JS/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                URLhashListener: true,
+                nav: true,
+                dots: false, 
+            });
+
+            $('.slider a').click(function(){
+                $('.slider a').removeClass('active')
+                $(this).addClass('active');
+            })
+
+        });
+    </script>
+
+</body>
+
+</html>
