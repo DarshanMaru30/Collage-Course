@@ -1,0 +1,15 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a=1;
+	clrscr();
+
+	while(a<=10)
+	{
+		cout<<"\n"<<a;
+		a++;
+	}
+
+	getch();
+}
